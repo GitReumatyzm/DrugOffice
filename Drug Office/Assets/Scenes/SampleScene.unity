@@ -428,9 +428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f360e162dde5f39469126ba00e937653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSesnsitivity: 100
+  mouseSesnsitivity: 1000
+  xRotation: 0
   playerBody: {fileID: 1336761085}
-  xRotation: 100
 --- !u!1 &1336761082
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,10 +506,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 10
-  playerController: {fileID: 1336761084}
-  gravity: -9.81
-  groundCheck: {fileID: 1539255560}
   groundDistance: 0.4
+  playerController: {fileID: 1336761084}
+  groundCheck: {fileID: 1539255560}
   groundMask:
     serializedVersion: 2
     m_Bits: 64
