@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour
     private float gravity = -9.81f;
     [SerializeField] float playerSpeed;
     [SerializeField] float groundDistance;
-    
+
+    public DialaogueManagerScript dialaogueManagerS;
 
     [SerializeField] CharacterController playerController;
 
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         PlayerMovementFunction();
+        SkippingDaialogue();
     }
 
     public void PlayerMovementFunction()
@@ -41,5 +43,14 @@ public class PlayerMovement : MonoBehaviour
 
         playerController.Move(velocity * Time.deltaTime);
      
+    }
+
+    public void SkippingDaialogue()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            dialaogueManagerS.DisplayNextSentence();
+        }
+
     }
 }
