@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float gravity = -9.81f;
-    [SerializeField] float playerSpeed;
+    public float playerSpeed;
     [SerializeField] float groundDistance;
 
     public DialaogueManagerScript dialaogueManagerS;
