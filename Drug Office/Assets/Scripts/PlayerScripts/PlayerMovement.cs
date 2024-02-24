@@ -6,14 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     private float gravity = -9.81f;
     public float playerSpeed;
-    [SerializeField] float groundDistance;
 
     public DialaogueManagerScript dialaogueManagerS;
 
-    [SerializeField] CharacterController playerController;
-
     private Vector3 velocity;
 
+    [SerializeField] CharacterController playerController;
+
+    [SerializeField] float groundDistance;
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundMask;
     private bool isGrounded;
@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         playerController.Move(velocity * Time.deltaTime);
      
     }
-
     public void SkippingDaialogue()
     {
         if (Input.GetKeyDown(KeyCode.Space))
