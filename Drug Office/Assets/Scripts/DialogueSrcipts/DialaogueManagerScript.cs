@@ -53,7 +53,7 @@ public class DialaogueManagerScript : MonoBehaviour
         Debug.Log("[END]");
         speechText.enabled = false;
         npcNameText.enabled = false;
-        playerMovementScript.playerSpeed = 10f;
+        playerMovementScript.playerSpeed = 200f;
     }
 
 
