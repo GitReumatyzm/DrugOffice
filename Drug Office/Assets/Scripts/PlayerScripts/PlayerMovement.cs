@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float gravity = -9.81f;
-    public float playerSpeed;
+    public static float playerSpeed = 10f;
 
     public DialaogueManagerScript dialaogueManagerS;
 
