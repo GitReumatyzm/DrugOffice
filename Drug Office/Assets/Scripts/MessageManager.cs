@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MessageManager : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class MessageManager : MonoBehaviour
         foreach (var message in messages)
         {
             var buttonObj = Instantiate(messageButtonPrefab, messageListTransform);
-            buttonObj.GetComponentInChildren<Text>().text = message.subject;
+            buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = message.subject;
             
             Message localMessage = message;
             buttonObj.GetComponent<Button>().onClick.AddListener(() => DisplayMessageContent(localMessage));
