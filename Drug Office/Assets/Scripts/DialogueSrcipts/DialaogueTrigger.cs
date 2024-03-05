@@ -15,7 +15,7 @@ public class DialaogueTrigger : MonoBehaviour
 
             if (isRepeatable == false)
             {
-                this.GetComponent<BoxCollider>().enabled = false;
+                Destroy(this.gameObject);
             }
         }
     }
