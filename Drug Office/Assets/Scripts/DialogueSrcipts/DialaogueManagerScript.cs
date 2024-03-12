@@ -9,7 +9,6 @@ public class DialaogueManagerScript : MonoBehaviour
     [SerializeField] Queue<string> sentences;
     [SerializeField] TextMeshProUGUI speechText;
     [SerializeField] TextMeshProUGUI npcNameText;
-    public PlayerMovement playerMovementScript;
 
     private void Start()
     {
@@ -19,7 +18,7 @@ public class DialaogueManagerScript : MonoBehaviour
     }
     public void StartDialaogue(Dialaogue dialaogue)
     {
-        playerMovementScript.playerSpeed = 0f;
+        PlayerMovement.playerSpeed = PlayerMovement.playerFreeze;
 
         speechText.enabled = true;
         npcNameText.enabled = true;
@@ -53,7 +52,7 @@ public class DialaogueManagerScript : MonoBehaviour
         Debug.Log("[END]");
         speechText.enabled = false;
         npcNameText.enabled = false;
-        playerMovementScript.playerSpeed = 200f;
+        PlayerMovement.playerSpeed = 5f;
     }
 
 

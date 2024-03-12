@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 94926779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.11}
+  m_LocalPosition: {x: 1.207, y: 0, z: -0.338}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -402,8 +402,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.775546, y: 0.8552605, z: 0.20731993}
-  m_Center: {x: -0.020526623, y: 0.09165402, z: 0.317209}
+  m_Size: {x: 0.775546, y: 0.8552605, z: 0.5744934}
+  m_Center: {x: -0.020526605, y: 0.091654, z: 0.34090677}
 --- !u!1 &95427182
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +837,7 @@ GameObject:
   - component: {fileID: 207500484}
   - component: {fileID: 207500483}
   - component: {fileID: 207500482}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   - component: {fileID: 240262627}
   - component: {fileID: 240262626}
   - component: {fileID: 240262625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1148,13 +1148,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1007190569597822437, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: m_Height
+      value: 2.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007190569597822437, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: m_Radius
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007190569597822437, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: m_StepOffset
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400674032900175140, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: playerSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400674032900175140, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: dialaogueManagerS
+      value: 
+      objectReference: {fileID: 964628101}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.x
       value: 397.5
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 50
+      value: 50.24
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1190,6 +1210,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6795255217789477741, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795255217789477741, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8452964087714919509, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
@@ -2084,8 +2108,8 @@ Transform:
   m_GameObject: {fileID: 699607208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.075571254, z: -0, w: 0.9971404}
-  m_LocalPosition: {x: 1.2270002, y: 0, z: 0.18800074}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.05, y: 0, z: 0.68}
+  m_LocalScale: {x: 1, y: 1, z: 2.6951}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1296768415}
@@ -2140,7 +2164,7 @@ GameObject:
   - component: {fileID: 722698663}
   - component: {fileID: 722698662}
   - component: {fileID: 722698661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2245,7 +2269,7 @@ GameObject:
   - component: {fileID: 735537244}
   - component: {fileID: 735537243}
   - component: {fileID: 735537242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2512,8 +2536,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5872275, y: 1, z: 1}
-  m_Center: {x: -0.29361483, y: 0, z: 5.347827e-16}
+  m_Size: {x: 0.7278677, y: 1, z: 1}
+  m_Center: {x: 0.13606498, y: 0, z: -1.572432e-16}
 --- !u!1 &898371497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2550,7 @@ GameObject:
   - component: {fileID: 898371500}
   - component: {fileID: 898371499}
   - component: {fileID: 898371498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2755,7 +2779,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speechText: {fileID: 676391009}
   npcNameText: {fileID: 1880739476}
-  playerMovementScript: {fileID: 0}
 --- !u!4 &964628102
 Transform:
   m_ObjectHideFlags: 0
@@ -2783,7 +2806,7 @@ GameObject:
   - component: {fileID: 972793309}
   - component: {fileID: 972793308}
   - component: {fileID: 972793307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2888,7 +2911,7 @@ GameObject:
   - component: {fileID: 999803933}
   - component: {fileID: 999803932}
   - component: {fileID: 999803931}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4243,7 +4266,7 @@ GameObject:
   - component: {fileID: 1340526861}
   - component: {fileID: 1340526860}
   - component: {fileID: 1340526859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4363,7 +4386,7 @@ Transform:
   m_GameObject: {fileID: 1394918138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.07253096, z: -0, w: 0.9973662}
-  m_LocalPosition: {x: -1.12, y: 0, z: -0.064}
+  m_LocalPosition: {x: -4.01, y: 0, z: -0.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4405,8 +4428,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.172864, y: 1.7892851, z: 1.5403153}
-  m_Center: {x: -0.08642927, y: -0.39463922, z: 0.11106141}
+  m_Size: {x: 1.330699, y: 1.7892851, z: 2.3336303}
+  m_Center: {x: 0.16829874, y: -0.3946392, z: 0.1529021}
 --- !u!1 &1421160690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,8 +5007,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9121199, y: 1, z: 1}
-  m_Center: {x: 0.1720308, y: 0, z: 0}
+  m_Size: {x: 0.29697514, y: 1, z: 1}
+  m_Center: {x: 0.4796033, y: 0, z: 0}
 --- !u!114 &1591352430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5120,7 +5143,7 @@ GameObject:
   - component: {fileID: 1640617328}
   - component: {fileID: 1640617327}
   - component: {fileID: 1640617326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5540,7 +5563,7 @@ GameObject:
   - component: {fileID: 1764480179}
   - component: {fileID: 1764480178}
   - component: {fileID: 1764480177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6235,7 +6258,7 @@ GameObject:
   - component: {fileID: 2019497192}
   - component: {fileID: 2019497191}
   - component: {fileID: 2019497190}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6341,7 +6364,7 @@ GameObject:
   - component: {fileID: 2074436790}
   - component: {fileID: 2074436789}
   - component: {fileID: 2074436788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: desk cubicule (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
