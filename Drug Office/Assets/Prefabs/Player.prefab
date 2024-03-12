@@ -87,10 +87,10 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 3.8
-  m_Radius: 0.6
+  m_Height: 2.37
+  m_Radius: 0.52
   m_SlopeLimit: 45
-  m_StepOffset: 0.7
+  m_StepOffset: 0.25
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d0c6c9211f9c141bcaf2bd0d96dc02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
   dialaogueManagerS: {fileID: 0}
   playerController: {fileID: 1007190569597822437}
   groundDistance: 0.4
@@ -126,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405f2cef92ac6cc48a0a728db3bcd66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactorSource: {fileID: 0}
+  interactorSource: {fileID: 4704297913960997986}
   interactRange: 5
 --- !u!1 &7527051792388149265
 GameObject:
