@@ -30,9 +30,11 @@ public class EmailListController : MonoBehaviour
 
             if (emailText != null && emailButton != null)
             {
-                emailText.text = email; // Set the email text
-                emailButton.onClick.AddListener(() => OpenEmail(email)); // Add click listener
+                emailText.text = email;
+                string localEmail = email; // Local copy to avoid capturing loop variable
+                emailButton.onClick.AddListener(() => OpenEmail(localEmail));
             }
+
         }
     }
 
@@ -40,6 +42,7 @@ public class EmailListController : MonoBehaviour
     {
         // Assuming you have a method in ComputerScreenController to display email content
         computerScreenController.DisplayEmailContent(emailContent);
+        computerScreenController.ToggleEmailListDisplay(false);
     }
 
     // Method to add emails to the list (for testing)
