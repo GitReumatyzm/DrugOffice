@@ -30,6 +30,8 @@ public class ComputerScreenController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseComputerScreen();
+            FirstPersonCamera.mouseSesnsitivity = 1000f;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 

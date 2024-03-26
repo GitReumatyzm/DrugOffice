@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class paperTaskStart : MonoBehaviour
+public class paperTaskStart : MonoBehaviour, iInteractable
 { 
     [SerializeField] TextMeshProUGUI papersTaskText;
-    [SerializeField] GameObject documentsObject;
+    [SerializeField] GameObject playerDocumentsObject;
     private int randomPapersNumber;
 
     void Start()
@@ -16,11 +16,12 @@ public class paperTaskStart : MonoBehaviour
         randomPapersNumber = Random.Range(1, 4);
     }
 
-    void OnTriggerEnter(Collider other)
+    public void Interact()
     {
         papersTaskText.enabled = true;
         Debug.Log("essa");
         papersTaskText.text = $"Papers: {randomPapersNumber}";
-        //Destroy(documentsObject);
+        Destroy(this.gameObject);
+        playerDocumentsObject.SetActive(true);
     }
 }
