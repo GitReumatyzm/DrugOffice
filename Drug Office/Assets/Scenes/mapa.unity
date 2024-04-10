@@ -860,22 +860,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215719666}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1375e76aa5f8684491609e833a4f433, type: 3}
+  m_Script: {fileID: 11500000, guid: e85640ee1e2f26842a44f4f60814c821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  computerScreen: {fileID: 2005555728}
-  emailContentText: {fileID: 1541730653}
-  emailResponse1Text: {fileID: 1138488349}
-  emailResponse2Text: {fileID: 804777360}
-  emailResponse1: {fileID: 1392333406}
-  emailResponse2: {fileID: 389171292}
-  emailScrollView: {fileID: 283998451}
-  closeComputerButton: {fileID: 709182483}
-  emailContent: {fileID: 1664301001}
-  back: {fileID: 1199816350}
-  emailContentDisplay: {fileID: 1541730653}
+  emailItemPrefab: {fileID: 0}
+  emailListContentTransform: {fileID: 283998452}
+  computerScreenController: {fileID: 2005555733}
 --- !u!1001 &248221027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9656,7 +9648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1664301002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11988,6 +11980,7 @@ GameObject:
   - component: {fileID: 2005555732}
   - component: {fileID: 2005555731}
   - component: {fileID: 2005555730}
+  - component: {fileID: 2005555733}
   m_Layer: 5
   m_Name: ComputerScreen
   m_TagString: Untagged
@@ -12080,6 +12073,29 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &2005555733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005555728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1375e76aa5f8684491609e833a4f433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  computerScreen: {fileID: 2005555728}
+  emailContentText: {fileID: 1541730653}
+  emailResponse1Text: {fileID: 1138488349}
+  emailResponse2Text: {fileID: 804777360}
+  emailResponse1: {fileID: 1392333406}
+  emailResponse2: {fileID: 389171292}
+  emailScrollView: {fileID: 283998451}
+  closeComputerButton: {fileID: 709182483}
+  emailContent: {fileID: 1664301001}
+  back: {fileID: 1199816350}
+  emailContentDisplay: {fileID: 1541730653}
 --- !u!1001 &2010002826
 PrefabInstance:
   m_ObjectHideFlags: 0
