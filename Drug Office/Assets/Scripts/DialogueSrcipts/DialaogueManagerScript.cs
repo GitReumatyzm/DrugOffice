@@ -7,8 +7,8 @@ using TMPro;
 public class DialaogueManagerScript : MonoBehaviour
 {
     [SerializeField] Queue<string> sentences;
-    [SerializeField] TextMeshProUGUI speechText;
-    [SerializeField] TextMeshProUGUI npcNameText;
+    public TextMeshProUGUI speechText;
+    public TextMeshProUGUI npcNameText;
 
     private void Start()
     {
@@ -18,8 +18,6 @@ public class DialaogueManagerScript : MonoBehaviour
     }
     public void StartDialaogue(Dialaogue dialaogue)
     {
-        PlayerMovement.playerSpeed = PlayerMovement.playerFreeze;
-
         speechText.enabled = true;
         npcNameText.enabled = true;
 
