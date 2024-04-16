@@ -12,7 +12,7 @@ public class paperTaskStart : MonoBehaviour, iInteractable
 
     void Start()
     {
-        papersTaskText.enabled = false;
+        //papersTaskText.enabled = false;
         randomPapersNumber = Random.Range(1, 4);
     }
 
@@ -20,7 +20,7 @@ public class paperTaskStart : MonoBehaviour, iInteractable
     {
         papersTaskText.enabled = true;
         Debug.Log("essa");
-        papersTaskText.text = $"Papers: {randomPapersNumber}";
+        papersTaskText.text = $"Get this documents to the shelf in storage room ({randomPapersNumber})";
         documentsObject.SetActive(true);
     }
 }

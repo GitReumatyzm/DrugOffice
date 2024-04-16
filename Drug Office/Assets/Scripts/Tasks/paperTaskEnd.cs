@@ -7,12 +7,12 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
 {
     [SerializeField] TextMeshProUGUI papersTaskText;
     [SerializeField] float time = 3f;
-    [SerializeField] string taskCompletedString = "DONE!";
+    //[SerializeField] string taskCompletedString = "DONE!";
     [SerializeField] GameObject docObj;
 
     public void Interact()
     {
-        papersTaskText.text = taskCompletedString;
+        papersTaskText.text = "<s>" + papersTaskText.text + "</s>";
         StartCoroutine(destroyOnTime());
         docObj.SetActive(false);
     }
