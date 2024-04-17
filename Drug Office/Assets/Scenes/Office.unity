@@ -17784,6 +17784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c13616c5975da40aea49b44133767a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InstructionsText: {fileID: 676391007}
   computerCanvas: {fileID: 215719666}
 --- !u!65 &1967312235
 BoxCollider:
@@ -18211,6 +18212,7 @@ MonoBehaviour:
   emailScrollView: {fileID: 283998451}
   closeComputerButton: {fileID: 709182483}
   emailContent: {fileID: 1664301001}
+  InstructionsText: {fileID: 676391007}
   back: {fileID: 1199816350}
   emailContentDisplay: {fileID: 1541730653}
 --- !u!1001 &2010002826
