@@ -23,7 +23,7 @@ public class ComputerScreenController : MonoBehaviour
 
     void Start()
     {
-        //computerScreen.SetActive(false); // Hide on start
+        computerScreen.SetActive(false); // Hide on start
         closeComputerButton.onClick.AddListener(CloseComputerScreen);
         back.onClick.AddListener(GoBack);
         emailResponse1.onClick.AddListener(EmailResponse1act);
