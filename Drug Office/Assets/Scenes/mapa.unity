@@ -1110,8 +1110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85640ee1e2f26842a44f4f60814c821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emailItemPrefab: {fileID: 0}
-  emailListContentTransform: {fileID: 283998452}
+  emailItemPrefab: {fileID: 4232594708315406344, guid: 31c09b0001a3c4349be4f8d5916edf06, type: 3}
+  emailListContentTransform: {fileID: 1326314142}
   computerScreenController: {fileID: 2005555733}
 --- !u!1 &238056185
 GameObject:
@@ -5343,7 +5343,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 323314531}
   m_HandleRect: {fileID: 323314530}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9550,8 +9550,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541730653
 MonoBehaviour:
@@ -9607,7 +9607,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
