@@ -16,6 +16,7 @@ public class ComputerScreenController : MonoBehaviour
     public Button closeComputerButton; // The "CloseButton" as a standard Button, not TMP_Button
 
     public GameObject emailContent;
+    public GameObject InstructionsText;
 
     public Button back;
     char Response = 'Z';
@@ -23,7 +24,7 @@ public class ComputerScreenController : MonoBehaviour
 
     void Start()
     {
-        computerScreen.SetActive(false); // Hide on start
+        //computerScreen.SetActive(false); // Hide on start
         closeComputerButton.onClick.AddListener(CloseComputerScreen);
         back.onClick.AddListener(GoBack);
         emailResponse1.onClick.AddListener(EmailResponse1act);
@@ -69,6 +70,7 @@ public class ComputerScreenController : MonoBehaviour
     void CloseComputerScreen()
     {
         computerScreen.SetActive(false);
+        InstructionsText.SetActive(true);
         FirstPersonCamera.mouseSesnsitivity = 1000f;
         Cursor.lockState = CursorLockMode.Locked;
     }
