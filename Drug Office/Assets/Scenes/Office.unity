@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (1)
@@ -684,32 +688,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: b101df6734dd13648acd695839af0998, type: 3}
---- !u!1 &128490024 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
-  m_PrefabInstance: {fileID: 655428999}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &128490028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128490024}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.022903375, y: 0.016993245, z: 0.037675906}
-  m_Center: {x: 0.0015702655, y: 0.00033113666, z: 0.004705112}
 --- !u!1001 &138275688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4988,10 +4966,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 128490028}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
 --- !u!4 &656545229 stripped
 Transform:
@@ -5425,6 +5400,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik
@@ -8906,6 +8885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (6)
@@ -10837,6 +10820,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (4)
@@ -11294,6 +11281,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (5)
@@ -17005,6 +16996,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (2)
@@ -17784,7 +17779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c13616c5975da40aea49b44133767a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InstructionsText: {fileID: 676391007}
   computerCanvas: {fileID: 215719666}
 --- !u!65 &1967312235
 BoxCollider:
@@ -18212,7 +18206,6 @@ MonoBehaviour:
   emailScrollView: {fileID: 283998451}
   closeComputerButton: {fileID: 709182483}
   emailContent: {fileID: 1664301001}
-  InstructionsText: {fileID: 676391007}
   back: {fileID: 1199816350}
   emailContentDisplay: {fileID: 1541730653}
 --- !u!1001 &2010002826
@@ -18892,6 +18885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8ec2f6bc5ba9ac4cba4f498f0e7bdd6, type: 2}
     - target: {fileID: 919132149155446097, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
       propertyPath: m_Name
       value: smietnik (3)
