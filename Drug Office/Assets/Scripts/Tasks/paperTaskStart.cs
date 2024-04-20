@@ -6,21 +6,14 @@ using TMPro;
 
 public class paperTaskStart : MonoBehaviour, iInteractable
 { 
-    [SerializeField] TextMeshProUGUI papersTaskText;
+    public TextMeshProUGUI papersTaskText;
     [SerializeField] GameObject documentsObject;
-    private int randomPapersNumber;
-
-    void Start()
-    {
-        //papersTaskText.enabled = false;
-        randomPapersNumber = Random.Range(1, 4);
-    }
+    public int PapersNumber = 3;
 
     public void Interact()
     {
         papersTaskText.enabled = true;
-        Debug.Log("essa");
-        papersTaskText.text = $"Get this documents to the shelf in storage room ({randomPapersNumber})";
+        papersTaskText.text = $"- Get this documents to the shelf in storage room({PapersNumber})";
         documentsObject.SetActive(true);
     }
 }

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpeechTrigger
+  - PaperStorageTask
+  - BossDeskTask
   layers:
   - Default
   - TransparentFX

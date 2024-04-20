@@ -7,14 +7,31 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
 {
     [SerializeField] TextMeshProUGUI papersTaskText;
     [SerializeField] float time = 3f;
-    //[SerializeField] string taskCompletedString = "DONE!";
     [SerializeField] GameObject docObj;
+    [SerializeField] List<GameObject> deskDocsObjs = new List<GameObject>();
+    public bool isStorageRoomDone;
+    private int papersNumber;
 
     public void Interact()
     {
-        papersTaskText.text = "<s>" + papersTaskText.text + "</s>";
-        StartCoroutine(destroyOnTime());
-        docObj.SetActive(false);
+        if (gameObject.CompareTag("PaperStorageTask"))
+        {
+          isStorageRoomDone = true;
+          papersNumber = 2;
+          papersTaskText.text = $"- Great work, fella! Now leave the rest on boss desk ({papersNumber})";
+        }
+        else if(gameObject.CompareTag("BossDeskTask") && isStorageRoomDone)
+        {
+            papersNumber = 0;
+            papersTaskText.text = $"- Noice mate ({papersNumber})";
+            papersTaskText.text = "<s>" + papersTaskText.text + "</s>";
+            docObj.SetActive(false);
+            foreach(GameObject obj in deskDocsObjs)
+            {
+                obj.SetActive(true);
+            }
+            StartCoroutine(destroyOnTime());
+        }
     }
 
     IEnumerator destroyOnTime()

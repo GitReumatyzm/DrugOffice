@@ -3129,6 +3129,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
+--- !u!1 &388530902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
+  m_PrefabInstance: {fileID: 1264264429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &389171290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,6 +6054,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
       propertyPath: m_Name
       value: dokument z textura
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10286,6 +10295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk textured2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
+      propertyPath: m_TagString
+      value: BossDeskTask
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -10296,6 +10309,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1576143487}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1576143488}
   m_SourcePrefab: {fileID: 100100000, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
 --- !u!4 &1162269024 stripped
 Transform:
@@ -11580,6 +11596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dokument z textura (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12349,6 +12369,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392333404}
   m_CullTransparentMesh: 1
+--- !u!1 &1398612292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fdd1fc205572d9447a62842831576f0a, type: 3}
+  m_PrefabInstance: {fileID: 767729764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1405722736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13084,6 +13109,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
       propertyPath: m_Name
       value: shelf_for_tasks textured (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
+      propertyPath: m_TagString
+      value: PaperStorageTask
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14218,6 +14247,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2477511411847689622, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
+--- !u!114 &1576143488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576143486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be178b19ff1c85469a81386ed1c0658, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  papersTaskText: {fileID: 2005472843}
+  time: 3
+  docObj: {fileID: 698884345}
+  deskDocsObjs:
+  - {fileID: 1398612292}
+  - {fileID: 388530902}
+  isStorageRoomDone: 0
 --- !u!1 &1583618741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b101df6734dd13648acd695839af0998, type: 3}
@@ -14583,6 +14631,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
       propertyPath: m_Name
       value: shelf_for_tasks textured (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
+      propertyPath: m_TagString
+      value: PaperStorageTask
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15184,7 +15236,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
 --- !u!114 &1667621409
@@ -15202,6 +15254,10 @@ MonoBehaviour:
   papersTaskText: {fileID: 2005472843}
   time: 3
   docObj: {fileID: 698884345}
+  deskDocsObjs:
+  - {fileID: 1398612292}
+  - {fileID: 388530902}
+  isStorageRoomDone: 0
 --- !u!4 &1667621410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -15386,6 +15442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
   documentsObject: {fileID: 698884345}
+  PapersNumber: 3
 --- !u!64 &1707836840
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15642,7 +15699,7 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
 --- !u!114 &1729287641
@@ -15660,6 +15717,10 @@ MonoBehaviour:
   papersTaskText: {fileID: 2005472843}
   time: 3
   docObj: {fileID: 698884345}
+  deskDocsObjs:
+  - {fileID: 1398612292}
+  - {fileID: 388530902}
+  isStorageRoomDone: 0
 --- !u!4 &1729287642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -16205,6 +16266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
   documentsObject: {fileID: 698884345}
+  PapersNumber: 3
 --- !u!4 &1800649029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -18339,7 +18401,7 @@ GameObject:
   - component: {fileID: 2005472844}
   - component: {fileID: 2005472843}
   m_Layer: 5
-  m_Name: numberOfPapers
+  m_Name: PapersTaskText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
