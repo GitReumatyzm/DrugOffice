@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class CoffeeTaskEnd : MonoBehaviour
+public class CoffeeTaskEnd : MonoBehaviour, iInteractable
 {
     [SerializeField] TextMeshProUGUI coffeeTaskText;
     [SerializeField] float time = 3f;

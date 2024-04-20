@@ -8873,10 +8873,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d40be10c65e8d14b879d26752e2f621, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1734012565}
+      addedObject: {fileID: 1734012567}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d40be10c65e8d14b879d26752e2f621, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1734012567}
+      addedObject: {fileID: 1734012568}
   m_SourcePrefab: {fileID: 100100000, guid: 1d40be10c65e8d14b879d26752e2f621, type: 3}
 --- !u!1 &1058089793 stripped
 GameObject:
@@ -10296,9 +10296,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1576143487}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1576143490}
   m_SourcePrefab: {fileID: 100100000, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
 --- !u!4 &1162269024 stripped
 Transform:
@@ -14221,20 +14218,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2477511411847689622, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
---- !u!114 &1576143490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576143486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2c13616c5975da40aea49b44133767a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InstructionsText: {fileID: 676391007}
-  computerCanvas: {fileID: 215719666}
 --- !u!1 &1583618741 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b101df6734dd13648acd695839af0998, type: 3}
@@ -14335,6 +14318,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: df47ef08e881feb4892096c778727e8a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1967312235}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: df47ef08e881feb4892096c778727e8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1967312236}
   m_SourcePrefab: {fileID: 100100000, guid: df47ef08e881feb4892096c778727e8a, type: 3}
 --- !u!1 &1599198764
 GameObject:
@@ -15684,28 +15670,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d40be10c65e8d14b879d26752e2f621, type: 3}
   m_PrefabInstance: {fileID: 1052875157}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1734012565
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734012563}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!4 &1734012566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d40be10c65e8d14b879d26752e2f621, type: 3}
@@ -15725,6 +15689,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coffeeTaskText: {fileID: 1058507584}
   CoffeeCup: {fileID: 1728335686}
+--- !u!65 &1734012568
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734012563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.73, y: 3.36, z: 2.95}
+  m_Center: {x: 0, y: 0.26, z: -0.18}
 --- !u!1 &1738744602 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -18183,6 +18168,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.07, y: 1.17, z: 1.9}
   m_Center: {x: 0, y: 0.61, z: 0}
+--- !u!114 &1967312236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967312233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c13616c5975da40aea49b44133767a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InstructionsText: {fileID: 676391007}
+  computerCanvas: {fileID: 215719666}
 --- !u!1001 &1982300186
 PrefabInstance:
   m_ObjectHideFlags: 0
