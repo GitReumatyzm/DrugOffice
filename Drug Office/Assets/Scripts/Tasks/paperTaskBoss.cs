@@ -8,14 +8,14 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
     [SerializeField] float time = 3f;
     [SerializeField] GameObject docObj;
     [SerializeField] List<GameObject> deskDocsObjs = new List<GameObject>();
-    [SerializeField] string taskEndMessage = "- Noice mate";
+    [SerializeField] string taskEndMessage = "Noice mate";
 
     public void Interact()
     {
         if (gameObject.CompareTag("BossDeskTask") && paperTaskEndScript.isStorageRoomDone == true)
         {
             paperTaskEndScript.papersNumber = 0;
-            paperTaskEndScript.papersTaskText.text = "<s>" + taskEndMessage + $" ({paperTaskEndScript.papersNumber})" + "</s>";
+            paperTaskEndScript.papersTaskText.text = "<s> - " + taskEndMessage + $" ({paperTaskEndScript.papersNumber})" + "</s>";
             docObj.SetActive(false);
             foreach (GameObject obj in deskDocsObjs)
             {
