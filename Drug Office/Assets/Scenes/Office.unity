@@ -5399,6 +5399,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2118958023}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2118958024}
   m_SourcePrefab: {fileID: 100100000, guid: 366b5de74ad19a4438667ebba549062e, type: 3}
 --- !u!4 &656545229 stripped
 Transform:
@@ -20282,6 +20285,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.022903375, y: 0.01974767, z: 0.029896867}
   m_Center: {x: 0.0015702655, y: 0.0000021094952, z: 0.0047694542}
+--- !u!114 &2118958024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367746184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c65cafaa8bf1c49a800d5e21cf12b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterPlantTaskText: {fileID: 996517210}
+  EndTaskMessage: '*sounds of draining water*'
+  plantTaskInfoCollider: {fileID: 460175337}
+  time: 3
 --- !u!1001 &2122233525
 PrefabInstance:
   m_ObjectHideFlags: 0
