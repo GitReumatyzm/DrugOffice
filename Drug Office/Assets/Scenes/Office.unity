@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &32425442
 Transform:
   m_ObjectHideFlags: 0
@@ -3559,12 +3559,12 @@ GameObject:
   - component: {fileID: 390206437}
   - component: {fileID: 390206436}
   m_Layer: 0
-  m_Name: infoCollider
+  m_Name: paperTaskInfoCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &390206435
 Transform:
   m_ObjectHideFlags: 0
@@ -4316,7 +4316,7 @@ GameObject:
   - component: {fileID: 460175340}
   - component: {fileID: 460175339}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: plantTaskInfoCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10935,6 +10935,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1431948366}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1616748052}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
       insertIndex: -1
@@ -13782,7 +13785,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1723042277}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
       insertIndex: -1
@@ -15413,6 +15419,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b101df6734dd13648acd695839af0998, type: 3}
   m_PrefabInstance: {fileID: 1607305934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616748051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616748052}
+  - component: {fileID: 1616748053}
+  - component: {fileID: 1616748054}
+  m_Layer: 0
+  m_Name: bossDeskPapersTaskInfoCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1616748052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616748051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.791, y: 0.0122, z: -0.0104}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1162269024}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1616748053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616748051}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.41636246, y: 0.056727182, z: 0.01}
+  m_Center: {x: -0.046804063, y: 0.002900032, z: 4.8259546e-14}
+--- !u!114 &1616748054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616748051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - Click "E" to give boss docs on the desk
+  dialaogueScript: {fileID: 964628101}
+  isRepeatable: 1
+  isWantStop: 0
 --- !u!1001 &1636385404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15936,6 +16015,7 @@ MonoBehaviour:
   deskBossTaskText: '- Great work, fella! Now leave the rest on boss desk'
   isStorageRoomDone: 0
   papersNumber: 0
+  bossDeskTaskInfoCollider: {fileID: 1616748051}
 --- !u!4 &1667621410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -16124,6 +16204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
+  startInfoBoxCollider: {fileID: 390206434}
+  shelfInfoCollider: {fileID: 1723042276}
   documentsObject: {fileID: 698884345}
   PapersNumber: 3
 --- !u!64 &1707836840
@@ -16242,6 +16324,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1874775374}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1723042276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1723042277}
+  - component: {fileID: 1723042278}
+  - component: {fileID: 1723042279}
+  m_Layer: 0
+  m_Name: taskShelfPapersInfoCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1723042277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723042276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.02129, y: -0.0148, z: -0.00505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1667621410}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1723042278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723042276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.04, y: 0.046448372, z: 0.0009375654}
+  m_Center: {x: 0, y: 0.024307553, z: -0.0029400154}
+--- !u!114 &1723042279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723042276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - Press "E" to give docs
+  dialaogueScript: {fileID: 964628101}
+  isRepeatable: 1
+  isWantStop: 0
 --- !u!1001 &1728335684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16401,6 +16556,7 @@ MonoBehaviour:
   deskBossTaskText: '- Great work, fella! Now leave the rest on boss desk'
   isStorageRoomDone: 0
   papersNumber: 0
+  bossDeskTaskInfoCollider: {fileID: 1616748051}
 --- !u!4 &1729287642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 259e6f1b95aea454699ffe0290e4684b, type: 3}
@@ -16432,6 +16588,7 @@ MonoBehaviour:
   CoffeeCup: {fileID: 1728335686}
   CoffeeCupMachine: {fileID: 1844346315}
   infoCollider: {fileID: 1014697972}
+  firstInfoCollider: {fileID: 32425441}
   isCoffeTaken: 0
 --- !u!65 &1734012568
 BoxCollider:
@@ -16953,6 +17110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
+  startInfoBoxCollider: {fileID: 390206434}
+  shelfInfoCollider: {fileID: 390206434}
   documentsObject: {fileID: 698884345}
   PapersNumber: 3
 --- !u!4 &1800649029 stripped

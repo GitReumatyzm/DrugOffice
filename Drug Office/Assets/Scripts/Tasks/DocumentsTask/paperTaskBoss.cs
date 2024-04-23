@@ -29,5 +29,6 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
     {
         yield return new WaitForSeconds(time);
         paperTaskEndScript.papersTaskText.enabled = false;
+        paperTaskEndScript.bossDeskTaskInfoCollider.SetActive(false);
     }
 }

@@ -9,6 +9,7 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
     public string deskBossTaskText = "- Great work, fella! Now leave the rest on boss desk";
     public bool isStorageRoomDone;
     public int papersNumber;
+    public GameObject bossDeskTaskInfoCollider;
 
     public void Interact()
     {
@@ -17,6 +18,7 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
           isStorageRoomDone = true;
           papersNumber = 2;
           papersTaskText.text = deskBossTaskText + $" ({papersNumber})";
+          bossDeskTaskInfoCollider.SetActive(true);
         }
     }
 }
