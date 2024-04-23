@@ -8,6 +8,7 @@ public class CoffeeTaskStart : MonoBehaviour, iInteractable
 { 
     [SerializeField] TextMeshProUGUI coffeeTaskText;
     [SerializeField] GameObject CoffeeCup;
+    [SerializeField] GameObject CoffeeCupMachine;
 
     void Start()
     {
@@ -17,8 +18,16 @@ public class CoffeeTaskStart : MonoBehaviour, iInteractable
     public void Interact()
     {
         coffeeTaskText.enabled = true;
-        Debug.Log("essa");
-        coffeeTaskText.text = $"Get this coffee to your bosses";
+        Debug.Log("1234");
+        coffeeTaskText.text = "Get this coffee to your bosses desk";
+        CoffeeCupMachine.SetActive(true);
+        StartCoroutine(ActivateCupAfterDelay(2.0f)); // Set delay here
+    }
+
+    IEnumerator ActivateCupAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wait for specified delay
         CoffeeCup.SetActive(true);
+        CoffeeCupMachine.SetActive(false);
     }
 }

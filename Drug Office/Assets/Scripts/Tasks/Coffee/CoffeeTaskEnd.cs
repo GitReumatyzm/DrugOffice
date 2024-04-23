@@ -11,6 +11,10 @@ public class CoffeeTaskEnd : MonoBehaviour, iInteractable
     [SerializeField] GameObject CoffeeCupDesk1;
     [SerializeField] GameObject CoffeeCupDesk2;
 
+    void Start()
+    {
+        Debug.Log("damn2");
+    }
     public void Interact()
     {
         coffeeTaskText.text = "<s>" + coffeeTaskText.text + "</s>";
