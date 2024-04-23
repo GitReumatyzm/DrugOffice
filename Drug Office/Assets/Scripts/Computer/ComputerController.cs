@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI; // For UI elements like buttons
 using TMPro; // For TextMeshPro elements
+using System.Collections.Generic;
+using System.Collections;
 
 public class ComputerScreenController : MonoBehaviour
 {
@@ -20,6 +22,9 @@ public class ComputerScreenController : MonoBehaviour
 
     public Button back;
     char Response = 'Z';
+
+    [SerializeField] TextMeshProUGUI mailTaskText;
+    [SerializeField] string taskDoneMessage = "DONE!";
 
 
     void Start()
@@ -41,6 +46,8 @@ public class ComputerScreenController : MonoBehaviour
     {
         emailScrollView.SetActive(true);
         emailContent.gameObject.SetActive(false);
+        mailTaskText.text = "<s> - " + taskDoneMessage + "</s>";
+        StartCoroutine(destroyOnTime());
     }
     public void DisplayEmailContent(string content)
     {
@@ -102,5 +109,11 @@ public class ComputerScreenController : MonoBehaviour
         GoBack();
         CloseComputerScreen();
 
-    } 
+    }
+
+    IEnumerator destroyOnTime(float time = 3f)
+    {
+        yield return new WaitForSeconds(time);
+        mailTaskText.enabled = false;
+    }
 }
