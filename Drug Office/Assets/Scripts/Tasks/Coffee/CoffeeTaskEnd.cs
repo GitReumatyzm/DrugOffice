@@ -10,6 +10,7 @@ public class CoffeeTaskEnd : MonoBehaviour, iInteractable
     [SerializeField] GameObject CoffeeCupPlayer;
     [SerializeField] GameObject CoffeeCupDesk1;
     [SerializeField] GameObject CoffeeCupDesk2;
+    public CoffeeTaskStart coffeTaskStartScript;
 
     void Start()
     {
@@ -17,11 +18,14 @@ public class CoffeeTaskEnd : MonoBehaviour, iInteractable
     }
     public void Interact()
     {
-        coffeeTaskText.text = "<s>" + coffeeTaskText.text + "</s>";
-        StartCoroutine(destroyOnTime());
-        CoffeeCupPlayer.SetActive(false);
-        CoffeeCupDesk1.SetActive(true);
-        CoffeeCupDesk2.SetActive(true);
+        if (coffeTaskStartScript.isCoffeTaken == true)
+        {
+            coffeeTaskText.text = "<s>" + coffeeTaskText.text + "</s>";
+            StartCoroutine(destroyOnTime());
+            CoffeeCupPlayer.SetActive(false);
+            CoffeeCupDesk1.SetActive(true);
+            CoffeeCupDesk2.SetActive(true);
+        }
     }
 
     IEnumerator destroyOnTime()
