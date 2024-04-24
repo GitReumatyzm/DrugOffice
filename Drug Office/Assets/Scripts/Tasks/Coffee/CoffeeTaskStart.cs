@@ -32,7 +32,7 @@ public class CoffeeTaskStart : MonoBehaviour, iInteractable
             Debug.Log("1234");
             coffeeTaskText.text = "Get this coffee to your bosses desk";
             CoffeeCupMachine.SetActive(true);
-            StartCoroutine(ActivateCupAfterDelay(2.0f)); // Set delay here
+            StartCoroutine(ActivateCupAfterDelay(4.0f)); // Set delay here
             isCoffeTaken = true;
         }
     }
