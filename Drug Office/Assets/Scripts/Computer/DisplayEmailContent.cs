@@ -1,15 +1,15 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System.Collections.Generic; // For using List
+using System.Collections.Generic;
 
 public class EmailListController : MonoBehaviour
 {
-    public GameObject emailItemPrefab; // Assign your EmailItemPrefab in the inspector
-    public Transform emailListContentTransform; // Assign the content transform of your EmailScrollView
-    public ComputerScreenController computerScreenController; // Reference to the ComputerScreenController script
+    public GameObject emailItemPrefab;
+    public Transform emailListContentTransform;
+    public ComputerScreenController computerScreenController;
 
-    private List<string> emails = new List<string>(); // Example email list
+    private List<string> emails = new List<string>();
 
     void Start()
     {
