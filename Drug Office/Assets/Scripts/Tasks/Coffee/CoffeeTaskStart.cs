@@ -11,6 +11,7 @@ public class CoffeeTaskStart : MonoBehaviour, iInteractable
     [SerializeField] GameObject CoffeeCupMachine;
     [SerializeField] BoxCollider infoCollider;
     [SerializeField] GameObject firstInfoCollider;
+    public List<GameObject> playerObjects;
     public bool isCoffeTaken;
 
     void Start()
@@ -25,7 +26,17 @@ public class CoffeeTaskStart : MonoBehaviour, iInteractable
 
     public void Interact()
     {
-        if (coffeeTaskText.IsActive())
+        bool isObjectsActive = false;
+        foreach (GameObject pObj in playerObjects)
+        {
+            if (pObj.activeSelf)
+            {
+                isObjectsActive = true;
+                break;
+            }
+        }
+
+        if (coffeeTaskText.IsActive() && !isObjectsActive)
         {
             infoCollider.enabled = true;
             coffeeTaskText.enabled = true;

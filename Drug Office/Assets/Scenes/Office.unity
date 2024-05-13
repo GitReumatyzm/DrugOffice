@@ -16713,6 +16713,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
+  playerObjects:
+  - {fileID: 698884345}
+  - {fileID: 1728335686}
   startInfoBoxCollider: {fileID: 390206434}
   shelfInfoCollider: {fileID: 1723042276}
   documentsObject: {fileID: 698884345}
@@ -17098,6 +17101,9 @@ MonoBehaviour:
   CoffeeCupMachine: {fileID: 1844346315}
   infoCollider: {fileID: 1014697972}
   firstInfoCollider: {fileID: 32425441}
+  playerObjects:
+  - {fileID: 698884345}
+  - {fileID: 1728335686}
   isCoffeTaken: 0
 --- !u!65 &1734012568
 BoxCollider:
@@ -17619,6 +17625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   papersTaskText: {fileID: 2005472843}
+  playerObjects: []
   startInfoBoxCollider: {fileID: 390206434}
   shelfInfoCollider: {fileID: 390206434}
   documentsObject: {fileID: 698884345}
