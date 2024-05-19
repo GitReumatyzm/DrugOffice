@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238056185}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -2084,6 +2084,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1482118436}
   m_SourcePrefab: {fileID: 100100000, guid: 8489827201a56594a8520fbff9830687, type: 3}
+--- !u!1 &260531132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 649119602419679271, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+  m_PrefabInstance: {fileID: 5354333913281378102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &260531135 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 939408751125509179, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+  m_PrefabInstance: {fileID: 5354333913281378102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &260531139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260531132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb22b8dadd7ef8438ba8f9a79cd3aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskTexts: []
+  endDayText: {fileID: 648909323}
+  elevatorAnim1: {fileID: 260531135}
+  elevatorAnim2: {fileID: 794369715}
 --- !u!4 &262152800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b0c8719ed1c81764da45a90adee731a1, type: 3}
@@ -7221,6 +7247,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f46dae7709c101d4799a1d4b0e47268c, type: 3}
   m_PrefabInstance: {fileID: 687060311}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &794369714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4902978179990387209, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+  m_PrefabInstance: {fileID: 5354333913281378102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &794369715 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4370280775647454337, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+  m_PrefabInstance: {fileID: 5354333913281378102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &794369721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794369714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb22b8dadd7ef8438ba8f9a79cd3aec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskTexts: []
+  endDayText: {fileID: 648909323}
+  elevatorAnim1: {fileID: 260531135}
+  elevatorAnim2: {fileID: 794369715}
 --- !u!1 &802424227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1500ec85d2b8574cb0f9b371724a7df, type: 3}
@@ -10017,12 +10069,12 @@ GameObject:
   - component: {fileID: 1058507585}
   - component: {fileID: 1058507584}
   m_Layer: 5
-  m_Name: Coffee task
+  m_Name: CoffeeTaskText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1058507583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10049,7 +10101,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058507582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -20201,7 +20253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2005472843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20209,7 +20261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005472842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -20641,7 +20693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2014552841
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20668,7 +20720,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014552840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -21437,7 +21489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c65cafaa8bf1c49a800d5e21cf12b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterPlantTaskText: {fileID: 996517208}
+  waterPlantTaskText: {fileID: 996517210}
   EndTaskMessage: '*sounds of draining water*'
   plantTaskInfoCollider: {fileID: 460175337}
   time: 3
@@ -22071,9 +22123,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
       propertyPath: endDayText
       value: 
       objectReference: {fileID: 648909323}
+    - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      propertyPath: elevatorAnim1
+      value: 
+      objectReference: {fileID: 260531135}
+    - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      propertyPath: elevatorAnim2
+      value: 
+      objectReference: {fileID: 794369715}
+    - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      propertyPath: taskTexts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
       propertyPath: taskTexts.Array.data[0]
       value: 
@@ -22094,10 +22162,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: elevator
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7658034107941856449, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+    - {fileID: 515170353131471286, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4902978179990387209, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 794369721}
+    - targetCorrespondingSourceObject: {fileID: 649119602419679271, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 260531139}
   m_SourcePrefab: {fileID: 100100000, guid: 9785bf9bac0f0c0419ff6667626e8dff, type: 3}
 --- !u!1001 &9139375124713744132
 PrefabInstance:

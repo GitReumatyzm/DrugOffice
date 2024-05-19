@@ -66,15 +66,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb22b8dadd7ef8438ba8f9a79cd3aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elevatorAnim1: {fileID: 939408751125509179}
-  elevatorAnim2: {fileID: 4370280775647454337}
   taskTexts:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   endDayText: {fileID: 0}
-  elevatorOpenScript: {fileID: 0}
+  elevatorAnim1: {fileID: 0}
+  elevatorAnim2: {fileID: 0}
 --- !u!1001 &7361997850715157229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -197,9 +196,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 7f15a80956a44bf48ac50737cd9a4114, type: 3}
       insertIndex: -1
       addedObject: {fileID: 939408751125509179}
-    - targetCorrespondingSourceObject: {fileID: 8009987137999418058, guid: 7f15a80956a44bf48ac50737cd9a4114, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5624847815941157770}
   m_SourcePrefab: {fileID: 100100000, guid: 7f15a80956a44bf48ac50737cd9a4114, type: 3}
 --- !u!1 &649119602419679271 stripped
 GameObject:
@@ -248,20 +244,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5624847815941157770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649119602419679271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2809166afa828943b6307e38939966a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elevatorAnim1: {fileID: 939408751125509179}
-  elevatorAnim2: {fileID: 4370280775647454337}
 --- !u!1 &4902978179990387209 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6763858364670572316, guid: 7f15a80956a44bf48ac50737cd9a4114, type: 3}
