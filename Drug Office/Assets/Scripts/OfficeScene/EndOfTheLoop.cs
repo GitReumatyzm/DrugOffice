@@ -13,6 +13,7 @@ public class EndOfTheLoop : MonoBehaviour
     public Animator elevatorAnim2;
     private string elevatorDoorOpen1 = "elevatorDoorOpen";
     private string elevatorDoorOpen2 = "elevatorDoorOpen2";
+    public ElevatorOpening elevatorOpenScript;
 
     public void Start()
     {
@@ -39,15 +40,8 @@ public class EndOfTheLoop : MonoBehaviour
         if (isDayEnded)
         {
             endDayText.SetActive(true);
-            StartCoroutine(openingElevatorAfterDelay());
+            elevatorOpenScript.enabled = true;
         }
 
-    }
-
-    IEnumerator openingElevatorAfterDelay(float time = 1f)
-    {
-        yield return new WaitForSeconds(time);
-        elevatorAnim1.Play(elevatorDoorOpen1, 0, 0f);
-        elevatorAnim2.Play(elevatorDoorOpen2, 0, 0f);
     }
 }
