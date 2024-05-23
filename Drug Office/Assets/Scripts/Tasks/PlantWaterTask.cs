@@ -10,6 +10,13 @@ public class PlantWaterTask : MonoBehaviour, iInteractable
     [SerializeField] GameObject plantTaskInfoCollider;
     [SerializeField] float time = 3f;
 
+    public void Start()
+    {
+        if (waterPlantTaskText.IsActive())
+        {
+            plantTaskInfoCollider.SetActive(true);
+        }
+    }
     public void Interact()
     {
         waterPlantTaskText.text = "<s> - " + EndTaskMessage + "</s>";

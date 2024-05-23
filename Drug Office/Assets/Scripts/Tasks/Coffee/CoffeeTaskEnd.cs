@@ -11,7 +11,6 @@ public class CoffeeTaskEnd : MonoBehaviour, iInteractable
     [SerializeField] GameObject CoffeeCupDesk1;
     [SerializeField] GameObject CoffeeCupDesk2;
     public CoffeeTaskStart coffeTaskStartScript;
-    [SerializeField] GameObject wkurwiamniejuzto;
 
     void Start()
     {
@@ -33,6 +32,5 @@ public class CoffeeTaskEnd : MonoBehaviour, iInteractable
     {
         yield return new WaitForSeconds(time);
        coffeeTaskText.enabled = false;
-        wkurwiamniejuzto.SetActive(false);
     }
 }

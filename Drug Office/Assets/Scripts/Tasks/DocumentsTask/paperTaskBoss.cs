@@ -7,7 +7,6 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
     public paperTaskEnd paperTaskEndScript;
     [SerializeField] float time = 3f;
     [SerializeField] GameObject docObj;
-    [SerializeField] GameObject wkurwiamniejuzto;
     [SerializeField] List<GameObject> deskDocsObjs = new List<GameObject>();
     [SerializeField] string taskEndMessage = "Noice mate";
 
@@ -31,6 +30,5 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
         yield return new WaitForSeconds(time);
         paperTaskEndScript.papersTaskText.enabled = false;
         paperTaskEndScript.bossDeskTaskInfoCollider.SetActive(false);
-        wkurwiamniejuzto.SetActive(false);
     }
 }
