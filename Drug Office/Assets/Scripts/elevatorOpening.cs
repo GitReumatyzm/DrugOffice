@@ -6,8 +6,8 @@ public class elevatorOpening : MonoBehaviour
 {
     public Animator elevatorAnim1;
     public Animator elevatorAnim2;
-    private string elevatorDoorOpen1 = "elevatorDoorOpen";
-    private string elevatorDoorOpen2 = "elevatorDoorOpen2";
+    private string elevatorDoorOpen1 = "elevatorDoorOpenAnim";
+    private string elevatorDoorOpen2 = "elevatorDoorOpenAnim1";
 
     public void Start()
     {
