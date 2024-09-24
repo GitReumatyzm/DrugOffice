@@ -7,6 +7,7 @@ TagManager:
   - SpeechTrigger
   - PaperStorageTask
   - BossDeskTask
+  - Front
   layers:
   - Default
   - TransparentFX
