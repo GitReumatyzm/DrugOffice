@@ -39,6 +39,7 @@ public class OfficeDoorsOpening : MonoBehaviour
         yield return new WaitUntil(() => doorAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
         doorAnimator.GetCurrentAnimatorStateInfo(0).IsName(closeAnimation));
         isCoroutineRunning = false;
+        otherBoxCollider.enabled = true;
     }
     
 }
