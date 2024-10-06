@@ -8,7 +8,7 @@ public class DialaogueTrigger : MonoBehaviour
     public DialaogueManagerScript dialaogueScript;
     [SerializeField] bool isRepeatable;
     [SerializeField] bool isWantStop;
-    [SerializeField] bool isCameraChanged;
+    public bool isCameraChanged;
     public GameObject playerCamera;
     public GameObject cutsceneCamera;
     public GameObject tasksCanvas;
@@ -33,6 +33,7 @@ public class DialaogueTrigger : MonoBehaviour
                 playerCamera.SetActive(false);
                 cutsceneCamera.SetActive(true);
                 tasksCanvas.SetActive(false);
+                isCameraChanged = false;
             }
         }
     }

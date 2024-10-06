@@ -10,6 +10,7 @@ public class DialaogueManagerScript : MonoBehaviour
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI npcNameText;
     public DialaogueTrigger dialaogueTriggerScript;
+    public bool isQActive = false;
 
     private void Start()
     {
@@ -19,7 +20,6 @@ public class DialaogueManagerScript : MonoBehaviour
     }
     public void StartDialaogue(Dialaogue dialaogue)
     {
-        Debug.Log("Start");
         if (sentences == null)
         {
             Debug.LogWarning("Sentences queue was null. Initializing a new Queue.");
@@ -54,13 +54,16 @@ public class DialaogueManagerScript : MonoBehaviour
 
     public void EndDialaogue()
     {
-        Debug.Log("[END]");
         speechText.enabled = false;
         npcNameText.enabled = false;
         PlayerMovement.playerSpeed = 5f;
-        dialaogueTriggerScript.tasksCanvas.SetActive(true);
-        dialaogueTriggerScript.cutsceneCamera.SetActive(false);
-        dialaogueTriggerScript.playerCamera.SetActive(true);
+        if (!dialaogueTriggerScript.isCameraChanged)
+        {
+            dialaogueTriggerScript.tasksCanvas.SetActive(true);
+            dialaogueTriggerScript.cutsceneCamera.SetActive(false);
+            dialaogueTriggerScript.playerCamera.SetActive(true);
+        }
+        isQActive = true;
     }
 
 

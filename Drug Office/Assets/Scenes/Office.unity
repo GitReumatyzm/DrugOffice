@@ -287,7 +287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &14396711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8445,7 +8445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -231.4}
+  m_AnchoredPosition: {x: 0, y: -200.35521}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676391009
@@ -8495,8 +8495,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.54
-  m_fontSizeBase: 22.54
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12293,6 +12293,7 @@ MonoBehaviour:
   speechText: {fileID: 676391009}
   npcNameText: {fileID: 1880739476}
   dialaogueTriggerScript: {fileID: 1579249876}
+  isQActive: 0
 --- !u!4 &964628102
 Transform:
   m_ObjectHideFlags: 0
@@ -17867,55 +17868,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 185f10da7a979504487ab021ad92b745, type: 3}
---- !u!1 &1345681253
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1345681255}
-  - component: {fileID: 1345681254}
-  m_Layer: 0
-  m_Name: StartDialaogue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1345681254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345681253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac4bfbe1ac8486e44abfff1ed755276e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialaogue:
-    npcName: Boss
-    sentences:
-    - Cos tam cos tam
-  dialaogueManager: {fileID: 964628101}
---- !u!4 &1345681255
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345681253}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 401.15796, y: 51.450504, z: 695.8325}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1345701289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20298,6 +20250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1542517830}
+  - component: {fileID: 1542517831}
   m_Layer: 0
   m_Name: DullPlayer
   m_TagString: Untagged
@@ -20322,6 +20275,30 @@ Transform:
   - {fileID: 1854897096}
   m_Father: {fileID: 2130206318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542517831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542517829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78b5efb3049ee64d89c9c84395c51ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: Boss
+    sentences:
+    - Welcome to the office!! If you ever have any questions regarding your work
+      feel free to ask me, my office is over there.
+    - 'The work is fairly simple you just have to do your tasks on time and not make
+      much fuss. '
+    - "Ah\u2026 and of course follow the rules!! 1 Listen to your superiors 2 Get
+      along with your coworkers and 3 dont go to the basement. Understood??"
+    - (press Q to leave desk)
+  dialaogueManager: {fileID: 964628101}
+  playerMovementScript: {fileID: 6795255218081441531}
 --- !u!1 &1549270191
 GameObject:
   m_ObjectHideFlags: 0
@@ -21036,8 +21013,15 @@ MonoBehaviour:
   dialaogue:
     npcName: Worker 1
     sentences:
-    - uwu
-    - er
+    - 'Have you noticed they have been taking on more lately?
+
+'
+    - "Yeah\u2026 yesterday 3 came in.. Do you think we\u2019re taking on more workload
+      than we can handle?\r\n"
+    - "Yeah\u2026 yesterday 3 came in.. Do you think we\u2019re taking on more workload
+      than we can handle?\r\n"
+    - "I think it\u2019s just a matter of time before something bad happens\u2026."
+    - (huh)
   dialaogueScript: {fileID: 964628101}
   isRepeatable: 0
   isWantStop: 1
@@ -22818,18 +22802,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 931547889}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1649274301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817595198688685132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef2b15ffdc09ed8499a1f7d72abb2ecf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1658845010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25861,6 +25833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sittingOnChairScript: {fileID: 1934613311}
+  tasks: {fileID: 14396710}
+  dialaogueManager: {fileID: 964628101}
 --- !u!1 &1857924928
 GameObject:
   m_ObjectHideFlags: 0
@@ -26254,7 +26228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -169.7, y: -96.2}
+  m_AnchoredPosition: {x: -169.7, y: -65.15522}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1880739476
@@ -31001,11 +30975,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8368242608345432919, guid: 6ed89435496041b4795c65ca4e1c9c17, type: 3}
   m_PrefabInstance: {fileID: 9139375124713744132}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &817595198688685132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8470492173102336840, guid: 6ed89435496041b4795c65ca4e1c9c17, type: 3}
-  m_PrefabInstance: {fileID: 9139375124713744132}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832149486173849661 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: fba1db0ce16f0c44886e778dccb6171f, type: 3}
@@ -34296,6 +34265,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6795255217789477741, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
   m_PrefabInstance: {fileID: 296420759}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6795255218081441531 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1400674032900175140, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+  m_PrefabInstance: {fileID: 296420759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795255218081441530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d0c6c9211f9c141bcaf2bd0d96dc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6815013826235066356
 Transform:
   m_ObjectHideFlags: 0
@@ -35372,14 +35352,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8990016552044717117, guid: 6ed89435496041b4795c65ca4e1c9c17, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8470492173102336840, guid: 6ed89435496041b4795c65ca4e1c9c17, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1649274301}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ed89435496041b4795c65ca4e1c9c17, type: 3}
 --- !u!65 &9148387258525785523
 BoxCollider:
@@ -35453,4 +35429,3 @@ SceneRoots:
   - {fileID: 1945730080}
   - {fileID: 1730446200}
   - {fileID: 1478919018}
-  - {fileID: 1345681255}
