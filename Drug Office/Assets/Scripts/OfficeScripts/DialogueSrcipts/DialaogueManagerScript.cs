@@ -9,6 +9,7 @@ public class DialaogueManagerScript : MonoBehaviour
     [SerializeField] Queue<string> sentences;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI npcNameText;
+    public DialaogueTrigger dialaogueTriggerScript;
 
     private void Start()
     {
@@ -18,6 +19,12 @@ public class DialaogueManagerScript : MonoBehaviour
     }
     public void StartDialaogue(Dialaogue dialaogue)
     {
+        Debug.Log("Start");
+        if (sentences == null)
+        {
+            Debug.LogWarning("Sentences queue was null. Initializing a new Queue.");
+            sentences = new Queue<string>();
+        }
         speechText.enabled = true;
         npcNameText.enabled = true;
 
@@ -51,6 +58,9 @@ public class DialaogueManagerScript : MonoBehaviour
         speechText.enabled = false;
         npcNameText.enabled = false;
         PlayerMovement.playerSpeed = 5f;
+        dialaogueTriggerScript.tasksCanvas.SetActive(true);
+        dialaogueTriggerScript.cutsceneCamera.SetActive(false);
+        dialaogueTriggerScript.playerCamera.SetActive(true);
     }
 
 
