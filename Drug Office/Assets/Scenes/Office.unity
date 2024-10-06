@@ -10888,7 +10888,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anwser 2
+  m_text: Answer 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15851,7 +15851,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Anwser 1
+  m_text: Answer 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28957,6 +28957,8 @@ MonoBehaviour:
   closeComputerButton: {fileID: 709182483}
   emailContent: {fileID: 1664301001}
   back: {fileID: 1199816350}
+  answerButton1: {fileID: 1392333406}
+  answerButton2: {fileID: 389171292}
   mailTaskText: {fileID: 2014552842}
   taskDoneMessage: DONE!
 --- !u!1001 &2010002826

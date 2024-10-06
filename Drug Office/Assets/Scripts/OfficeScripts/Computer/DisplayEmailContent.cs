@@ -1,52 +1,34 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class EmailListController : MonoBehaviour
 {
-    public List<Button> emailButtons = new List<Button>(); // Your 7 email buttons
-    public Button nextButton; // Button to reveal the next email button
-    public ComputerScreenController computerScreenController;
+    [Header("UI References")]
+    public List<Button> emailButtons = new List<Button>(); // Assign your 7 email buttons here
+    public Button nextButton; // Assign your "Next" button here
+    public ComputerScreenController computerScreenController; // Assign your ComputerScreenController here
 
+    [Header("Email Data")]
     private List<string> emails = new List<string>();
-    private int currentEmailIndex = 0; // Tracks the current email being shown
+    private int currentEmailIndex = 0; // Tracks the next email to assign
 
     void Start()
     {
         Debug.Log("Start method called in EmailListController");
 
-        // Adding email content
-        AddEmail("Subject: Welcome\n(1)Dear User, Welcome to our service!");
-        AddEmail("Subject: Update\n(2)We have updated our terms of service.");
-        AddEmail("Subject: Newsletter\n(3)Check out our latest news in this newsletter.");
-        AddEmail("Subject: Welcome\n(4)Dear User, Welcome to our service!");
-        AddEmail("Subject: Update\n(5)We have updated our terms of service.");
-        AddEmail("Subject: Newsletter\n(6)Check out our latest news in this newsletter.");
+        // Initialize email content
+        InitializeEmails();
 
         Debug.Log("Emails added, total: " + emails.Count);
 
-        // Populate email buttons and check if they are working
-        PopulateEmailButtons();
-        
-        Debug.Log("Email buttons populated");
+        // Initialize email buttons
+        InitializeEmailButtons();
 
-        // Initially hide all mail buttons except the first one
-        for (int i = 0; i < emailButtons.Count; i++)
-        {
-            if (i == 0)
-            {
-                emailButtons[i].gameObject.SetActive(true); // Show first email button
-            }
-            else
-            {
-                emailButtons[i].gameObject.SetActive(false); // Hide others
-            }
-        }
+        // Initially hide all email buttons except the first one
+        SetInitialButtonVisibility();
 
-        Debug.Log("First email button visible, others hidden");
-
-        // Add listener for the Next button to reveal the next email
+        // Add listener for the "Next" button to reveal the next email button
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(ShowNextEmailButton);
@@ -54,45 +36,77 @@ public class EmailListController : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Next button is null, check assignment in Inspector");
+            Debug.LogError("Next button is not assigned in the Inspector.");
         }
     }
 
-
-    void PopulateEmailButtons()
+    void InitializeEmails()
     {
-        Debug.Log("Populating email buttons");
+        AddEmail("Subject: Welcome\n(1)Dear User, Welcome to our service!");
+        AddEmail("Subject: Update\n(2)We have updated our terms of service.");
+        AddEmail("Subject: Newsletter\n(3)Check out our latest news in this newsletter.");
+        AddEmail("Subject: Welcome\n(4)Dear User, Welcome to our service!");
+        AddEmail("Subject: Update\n(5)We have updated our terms of service.");
+        AddEmail("Subject: Newsletter\n(6)Check out our latest news in this newsletter.");
+        AddEmail("Subject: Final Notice\n(7)This is your final email.");
+    }
+
+    void InitializeEmailButtons()
+    {
+        Debug.Log("Initializing email buttons");
+
+        // Ensure we have enough emails for the buttons
+        if (emailButtons.Count > emails.Count)
+        {
+            Debug.LogWarning("More email buttons than emails. Some buttons will remain inactive.");
+        }
 
         for (int i = 0; i < emailButtons.Count; i++)
         {
             if (emailButtons[i] == null)
             {
-                Debug.LogError("Email button at index " + i + " is null!");
+                Debug.LogError($"Email button at index {i} is not assigned in the Inspector.");
                 continue;
             }
 
-            int index = i; // Local copy to avoid closure issues
-
             if (i < emails.Count)
             {
-                // We don't need to set the text since the buttons are photos, but we still need to attach the listener
-                Debug.Log("Setting up email button " + i + " for email: " + emails[i]);
+                int index = i; // Local copy to avoid closure issues
+                emailButtons[i].onClick.RemoveAllListeners(); // Clear existing listeners
 
+                // Assign the email data to the button
                 emailButtons[i].onClick.AddListener(() => OpenEmail(emails[index], emailButtons[index]));
+                Debug.Log($"Email button {i} is set up with email: {emails[index]}");
             }
             else
             {
-                Debug.LogError("Not enough emails for button " + i);
+                emailButtons[i].gameObject.SetActive(false); // Hide buttons without emails
+                Debug.Log($"Email button {i} has no assigned email and is hidden.");
             }
         }
     }
 
-
-
+    void SetInitialButtonVisibility()
+    {
+        for (int i = 0; i < emailButtons.Count; i++)
+        {
+            if (i == 0)
+            {
+                emailButtons[i].gameObject.SetActive(true); // Show the first button
+                Debug.Log($"Email button {i} is now visible.");
+                currentEmailIndex = 1; // Next email to assign
+            }
+            else
+            {
+                emailButtons[i].gameObject.SetActive(false); // Hide all others initially
+                Debug.Log($"Email button {i} is hidden.");
+            }
+        }
+    }
 
     void OpenEmail(string emailContent, Button emailButton)
     {
-        Debug.Log("Opening email: " + emailContent);
+        Debug.Log($"Opening email: {emailContent}");
 
         // Display the email content using ComputerScreenController
         if (computerScreenController != null)
@@ -108,9 +122,6 @@ public class EmailListController : MonoBehaviour
         emailButton.gameObject.SetActive(false);
         Debug.Log("Email button hidden after opening.");
 
-        // Show the next email button, if there is one
-        ShowNextEmailButton();
-
         // Check if all emails have been answered
         CheckIfAllEmailsAnswered();
     }
@@ -119,14 +130,41 @@ public class EmailListController : MonoBehaviour
     {
         Debug.Log("Next button clicked");
 
-        // Reveal the next hidden email button, if there is one
-        if (currentEmailIndex < emailButtons.Count - 1)
+        // Check if there are more emails to assign
+        if (currentEmailIndex < emails.Count)
         {
-            currentEmailIndex++; // Move to the next email
-            Debug.Log("Current email index: " + currentEmailIndex);
+            // Find the first hidden email button
+            Button nextButtonToShow = null;
+            int buttonIndex = -1;
 
-            emailButtons[currentEmailIndex].gameObject.SetActive(true); // Show the next email button
-            Debug.Log("Email button " + currentEmailIndex + " is now visible.");
+            for (int i = 0; i < emailButtons.Count; i++)
+            {
+                if (!emailButtons[i].gameObject.activeSelf && i < emails.Count)
+                {
+                    nextButtonToShow = emailButtons[i];
+                    buttonIndex = i;
+                    break;
+                }
+            }
+
+            if (nextButtonToShow != null)
+            {
+                // Assign the next email to this button
+                int emailIndex = currentEmailIndex;
+                nextButtonToShow.onClick.RemoveAllListeners(); // Clear existing listeners
+                nextButtonToShow.onClick.AddListener(() => OpenEmail(emails[emailIndex], nextButtonToShow));
+                // If using images to represent emails, you might want to set the image here
+                // For example:
+                // nextButtonToShow.GetComponent<Image>().sprite = yourEmailSprites[emailIndex];
+                nextButtonToShow.gameObject.SetActive(true);
+                Debug.Log($"Email button {buttonIndex} is now visible with email: {emails[emailIndex]}");
+
+                currentEmailIndex++; // Increment for the next email
+            }
+            else
+            {
+                Debug.Log("No available email buttons to show.");
+            }
         }
         else
         {
@@ -162,7 +200,7 @@ public class EmailListController : MonoBehaviour
 
         foreach (string email in emails)
         {
-            Debug.Log("Answered email: " + email);
+            Debug.Log($"Answered email: {email}");
         }
     }
 
@@ -170,7 +208,7 @@ public class EmailListController : MonoBehaviour
     public void AddEmail(string emailContent)
     {
         emails.Add(emailContent);
-        Debug.Log("Email added: " + emailContent);
+        Debug.Log($"Email added: {emailContent}");
     }
 
     void Update()
