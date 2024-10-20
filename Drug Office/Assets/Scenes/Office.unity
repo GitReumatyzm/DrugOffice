@@ -28930,12 +28930,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computerScreen: {fileID: 215719666}
-  emailContentDisplay: {fileID: 0}
+  emailContentDisplay: {fileID: 1541730653}
   closeComputerButton: {fileID: 709182483}
   emailContent: {fileID: 1664301001}
   back: {fileID: 1199816350}
   answerButton1: {fileID: 1392333406}
+  answerButton1Text: {fileID: 1138488349}
   answerButton2: {fileID: 389171292}
+  answerButton2Text: {fileID: 804777360}
   mailTaskText: {fileID: 0}
   taskDoneMessage: DONE!
 --- !u!1001 &2010002826

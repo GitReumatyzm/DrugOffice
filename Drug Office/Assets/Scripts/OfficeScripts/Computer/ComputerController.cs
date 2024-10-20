@@ -1,22 +1,24 @@
 using UnityEngine;
+using TMPro; // Using TextMeshPro
 using UnityEngine.UI;
-using TMPro;
 
 public class ComputerScreenController : MonoBehaviour
 {
     [Header("UI References")]
     public GameObject computerScreen; 
-    public Text emailContentDisplay; // Changed from TMP_Text to Text
+    public TMP_Text emailContentDisplay; // Using TMP_Text
     public Button closeComputerButton; 
     public GameObject emailContent;
     public Button back;
 
     [Header("Answer Buttons")]
     public Button answerButton1; // Assign in Inspector
+    public TMP_Text answerButton1Text; // Assign TMP_Text for Answer Button 1
     public Button answerButton2; // Assign in Inspector
+    public TMP_Text answerButton2Text; // Assign TMP_Text for Answer Button 2
 
     [Header("Task Text")]
-    [SerializeField] private Text mailTaskText; // Changed from TextMeshProUGUI to Text
+    [SerializeField] private TMP_Text mailTaskText; // Using TMP_Text
     [SerializeField] private string taskDoneMessage = "DONE!";
 
     void Start()
@@ -43,7 +45,8 @@ public class ComputerScreenController : MonoBehaviour
             Debug.LogError("Answer Button 2 is not assigned.");
     }
 
-    public void DisplayEmailContent(string content)
+    // Display the email content and the answer button text
+    public void DisplayEmailContent(string content, string answer1, string answer2)
     {
         if (emailContentDisplay != null)
         {
@@ -56,12 +59,19 @@ public class ComputerScreenController : MonoBehaviour
             Debug.LogError("EmailContentDisplay is not assigned.");
         }
 
-        // Activate answer buttons
-        if (answerButton1 != null && answerButton2 != null)
+        // Set the answer buttons' text
+        if (answerButton1Text != null && answerButton2Text != null)
         {
+            answerButton1Text.text = answer1;
+            answerButton2Text.text = answer2;
+
             answerButton1.gameObject.SetActive(true);
             answerButton2.gameObject.SetActive(true);
-            Debug.Log("Answer buttons are now active.");
+            Debug.Log("Answer buttons are now active with updated text.");
+        }
+        else
+        {
+            Debug.LogError("Answer button texts are not assigned.");
         }
     }
 
