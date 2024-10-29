@@ -11,8 +11,9 @@ public class elevatorOpening : MonoBehaviour
     public bool isElevatorDoorOpened = false;
     private float time = 3f;
 
-    public void Start()
+    public void Interact()
     {
+        Debug.Log("OPENIN!");
         StartCoroutine(openingElevatorAfterDelay());
     }
 

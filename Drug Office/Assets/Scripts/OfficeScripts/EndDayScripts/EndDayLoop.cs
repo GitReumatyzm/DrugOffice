@@ -7,15 +7,7 @@ public class EndDayLoop : MonoBehaviour
 {
     public List<TextMeshProUGUI> taskTexts = new List<TextMeshProUGUI>();
     public GameObject endDayText;
-    //public ElevatorOpening elevatorOpenScript;
-
-    public void Start()
-    {
-        taskTexts.Add(GameObject.Find("PapersTaskText").GetComponent<TextMeshProUGUI>());
-        taskTexts.Add(GameObject.Find("CoffeeTaskText").GetComponent<TextMeshProUGUI>());
-        taskTexts.Add(GameObject.Find("PlantTaskText").GetComponent<TextMeshProUGUI>());
-        taskTexts.Add(GameObject.Find("MailTaskText").GetComponent<TextMeshProUGUI>());
-    }
+    public BoxCollider elevatorButtonCollider;
 
     public void Update()
     {
@@ -24,7 +16,6 @@ public class EndDayLoop : MonoBehaviour
         {
             if (tTexts.enabled)
             {
-                Debug.Log("foreach");
                 isDayEnded = false;
                 break;
             }
@@ -33,8 +24,8 @@ public class EndDayLoop : MonoBehaviour
 
         if (isDayEnded)
         {
+            elevatorButtonCollider.enabled = true;
             endDayText.SetActive(true);
-            //elevatorOpenScript.enabled = true;
         }
 
     }
