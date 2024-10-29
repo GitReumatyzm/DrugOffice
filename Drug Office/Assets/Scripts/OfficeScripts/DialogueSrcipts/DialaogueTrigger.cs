@@ -8,6 +8,10 @@ public class DialaogueTrigger : MonoBehaviour
     public DialaogueManagerScript dialaogueScript;
     [SerializeField] bool isRepeatable;
     [SerializeField] bool isWantStop;
+    public bool isCameraChanged;
+    public GameObject playerCamera;
+    public GameObject cutsceneCamera;
+    public GameObject tasksCanvas;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -23,6 +27,13 @@ public class DialaogueTrigger : MonoBehaviour
             if (isWantStop == true)
             {
                 PlayerMovement.playerSpeed = PlayerMovement.playerFreeze;
+            }
+            if (isCameraChanged == true)
+            {
+                playerCamera.SetActive(false);
+                cutsceneCamera.SetActive(true);
+                tasksCanvas.SetActive(false);
+                isCameraChanged = false;
             }
         }
     }

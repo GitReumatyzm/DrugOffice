@@ -9,8 +9,8 @@ public class OfficeDoorsOpening : MonoBehaviour
     [SerializeField] string closeAnimation;
     [SerializeField] bool isOpen = false;
     [SerializeField] bool isCoroutineRunning = false;
-    [SerializeField] BoxCollider otherBoxCollider; 
-    
+    [SerializeField] BoxCollider otherBoxCollider;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,7 +24,7 @@ public class OfficeDoorsOpening : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(isOpen && other.gameObject.CompareTag("Player") && !isCoroutineRunning)
+        if (isOpen && other.gameObject.CompareTag("Player") && !isCoroutineRunning)
         {
             isOpen = false;
             StartCoroutine(closeAfterDelay(3f));
@@ -39,6 +39,8 @@ public class OfficeDoorsOpening : MonoBehaviour
         yield return new WaitUntil(() => doorAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
         doorAnimator.GetCurrentAnimatorStateInfo(0).IsName(closeAnimation));
         isCoroutineRunning = false;
+        otherBoxCollider.enabled = true;
     }
-    
+
+
 }
