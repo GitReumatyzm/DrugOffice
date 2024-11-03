@@ -13,8 +13,10 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
 
     public void Interact()
     {
+        Debug.Log("ock");
         if (gameObject.CompareTag("PaperStorageTask"))
         {
+            Debug.Log("click");
           isStorageRoomDone = true;
           papersNumber = 2;
           papersTaskText.text = deskBossTaskText + $" ({papersNumber})";
