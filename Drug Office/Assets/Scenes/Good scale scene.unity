@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 57528540}
   - component: {fileID: 57528541}
   m_Layer: 0
-  m_Name: DialaogueTrigger
+  m_Name: KitchenDialaogueTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8409,7 +8409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1409749150}
   dullPlayer: {fileID: 1734730218}
-  computerCollider: {fileID: 57528540}
+  computerCollider: {fileID: 1283436173}
   isSitting: 0
   dialaogueManager: {fileID: 77635469}
 --- !u!1001 &907511644
@@ -9612,7 +9612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1054886676
 AudioListener:
   m_ObjectHideFlags: 0
@@ -9620,7 +9620,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054886675}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1054886677
 Camera:
   m_ObjectHideFlags: 0
