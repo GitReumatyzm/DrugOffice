@@ -928,7 +928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &57528539
 Transform:
   m_ObjectHideFlags: 0
@@ -6024,6 +6024,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.155
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
       propertyPath: m_Name
       value: elevator (1)
@@ -6039,6 +6043,10 @@ PrefabInstance:
     - target: {fileID: 6830945432629781959, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 8632055958874330854, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14764,8 +14772,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.32698065, y: 1.0091766, z: 0.032949686}
-  m_Center: {x: -0.5912174, y: 0.10669829, z: 2.7258282}
+  m_Size: {x: 0.3269806, y: 1.0091766, z: 0.051303387}
+  m_Center: {x: -0.5912174, y: 0.106698275, z: 2.7166512}
 --- !u!65 &1331075198
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -28,7 +28,6 @@ public class EndDayLoop : MonoBehaviour
 
         if (isDayEnded)
         {
-            Debug.Log("suck");
             elevatorAnim1.CrossFade(elevatorDoorOpen1, 0f);
             elevatorAnim2.CrossFade(elevatorDoorOpen2, 0f);
             elevatorButtonCollider.enabled = true;
