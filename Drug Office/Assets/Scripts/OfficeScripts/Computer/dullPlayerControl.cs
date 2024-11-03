@@ -17,7 +17,7 @@ public class dullPlayerControl : MonoBehaviour
                 sittingOnChairScript.isSitting = false;
                 sittingOnChairScript.player.SetActive(true);
                 sittingOnChairScript.dullPlayer.SetActive(false);
-                //sittingOnChairScript.computerCollider.enabled = false;
+                sittingOnChairScript.computerCollider.enabled = false;
                 //sittingOnChairScript.infoCollider.SetActive(false);
                 tasks.SetActive(true);
                 Cursor.lockState = CursorLockMode.Locked;

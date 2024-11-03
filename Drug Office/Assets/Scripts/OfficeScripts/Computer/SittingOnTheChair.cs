@@ -6,20 +6,24 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
 {
     public GameObject player;
     public GameObject dullPlayer;
-    //public BoxCollider computerCollider;
-    public GameObject infoCollider;
+    public BoxCollider computerCollider;
+    //public GameObject infoCollider;
     public bool isSitting = false;
+    public DialaogueManagerScript dialaogueManager;
     public void Interact()
     {
-        if (!isSitting)
+        if (dialaogueManager.isQActive)
         {
-            isSitting = true;
-            player.SetActive(false);
-            dullPlayer.SetActive(true);
-            //computerCollider.enabled = true;
-            infoCollider.SetActive(false);
+            if (!isSitting)
+            {
+                isSitting = true;
+                player.SetActive(false);
+                dullPlayer.SetActive(true);
+                computerCollider.enabled = true;
+                //infoCollider.SetActive(false)
+            }
         }
-        
+
     }
 
 }

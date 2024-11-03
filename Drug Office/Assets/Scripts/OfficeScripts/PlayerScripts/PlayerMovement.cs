@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float gravity = -9.81f;
-    public static float playerSpeed = 1.5f;
+    public static float playerSpeed = 2f;
     public static float playerFreeze = 0f;
 
     public DialaogueManagerScript dialaogueManagerS;
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         playerController.Move(velocity * Time.deltaTime);
-     
+
     }
     public void SkippingDaialogue()
     {

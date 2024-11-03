@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TeleportToTheNextScene : MonoBehaviour, iInteractable 
+public class TeleportToTheNextScene : MonoBehaviour, iInteractable
 {
     public Animator elevatorAnim1;
     public Animator elevatorAnim2;

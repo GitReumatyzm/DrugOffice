@@ -596,7 +596,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!1001 &39149930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3804,7 +3804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 411.64
+      value: 396.31
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3812,7 +3812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 688.14
+      value: 692.157
       objectReference: {fileID: 0}
     - target: {fileID: 4704297913960997986, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3873,6 +3873,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1560199878}
   m_SourcePrefab: {fileID: 100100000, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+--- !u!114 &296420760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1400674032900175140, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+  m_PrefabInstance: {fileID: 296420759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6795255218081441530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47d0c6c9211f9c141bcaf2bd0d96dc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &297051821
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5418,7 +5429,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!65 &390206437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6250,7 +6261,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!65 &460175340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7176,6 +7187,109 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 990158027}
   m_SourcePrefab: {fileID: 100100000, guid: b101df6734dd13648acd695839af0998, type: 3}
+--- !u!1001 &581373988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 399.237
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 696.6588
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 427881849968587214, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 484806620371363721, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_Name
+      value: DullPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 484806620371363721, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734962216125271055, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: tasks
+      value: 
+      objectReference: {fileID: 1022609618}
+    - target: {fileID: 5734962216125271055, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: dialaogueManager
+      value: 
+      objectReference: {fileID: 964628101}
+    - target: {fileID: 5734962216125271055, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: sittingOnChairScript
+      value: 
+      objectReference: {fileID: 1934613311}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 484806620371363721, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 581373990}
+  m_SourcePrefab: {fileID: 100100000, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+--- !u!1 &581373989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 484806620371363721, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+  m_PrefabInstance: {fileID: 581373988}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &581373990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581373989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c640ce9ceca5a488153d737ae40269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: Boss
+    sentences:
+    - s
+    - e
+    - k
+    - s
+  dialaogueManager: {fileID: 964628101}
+  playerMovementScript: {fileID: 296420760}
+  boss: {fileID: 1020399261}
 --- !u!1 &588185198
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,7 +13118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speechText: {fileID: 676391009}
   npcNameText: {fileID: 1880739476}
-  dialaogueTriggerScript: {fileID: 0}
+  dialaogueTriggerScript: {fileID: 1431948368}
   isQActive: 0
 --- !u!4 &964628102
 Transform:
@@ -13580,7 +13694,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!65 &1014697972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13916,6 +14030,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ea44d149ab84154389cdc57aedd8876, type: 3}
   m_PrefabInstance: {fileID: 1020399259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1020399261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7036213049465896255, guid: 7ea44d149ab84154389cdc57aedd8876, type: 3}
+  m_PrefabInstance: {fileID: 1020399259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1022609618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8736594435832445340, guid: d340ec0169713c8458f0f4bdf2921b69, type: 3}
+  m_PrefabInstance: {fileID: 4142829595611839078}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1028895965
 PrefabInstance:
@@ -19142,7 +19266,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!1001 &1436514372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22841,7 +22965,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!1 &1617744379
 GameObject:
   m_ObjectHideFlags: 0
@@ -25042,7 +25166,7 @@ MonoBehaviour:
   isCameraChanged: 0
   playerCamera: {fileID: 0}
   cutsceneCamera: {fileID: 0}
-  tasksCanvas: {fileID: 0}
+  tasksCanvas: {fileID: 1022609618}
 --- !u!1 &1723300514
 GameObject:
   m_ObjectHideFlags: 0
@@ -27862,8 +27986,8 @@ MonoBehaviour:
   player: {fileID: 6795255218081441530}
   dullPlayer: {fileID: 1542517829}
   computerCollider: {fileID: 1967312235}
-  infoCollider: {fileID: 1431948365}
   isSitting: 0
+  dialaogueManager: {fileID: 0}
 --- !u!1001 &1939279700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36158,3 +36282,4 @@ SceneRoots:
   - {fileID: 682391541}
   - {fileID: 1658605750}
   - {fileID: 1220985198}
+  - {fileID: 581373988}
