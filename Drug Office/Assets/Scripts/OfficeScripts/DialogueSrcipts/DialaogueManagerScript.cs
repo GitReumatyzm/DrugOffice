@@ -11,6 +11,7 @@ public class DialaogueManagerScript : MonoBehaviour
     public TextMeshProUGUI npcNameText;
     public DialaogueTrigger dialaogueTriggerScript;
     public bool isQActive = false;
+    public PlayerMovement playerMovementScript;
 
     private void Start()
     {
@@ -56,7 +57,7 @@ public class DialaogueManagerScript : MonoBehaviour
     {
         speechText.enabled = false;
         npcNameText.enabled = false;
-        PlayerMovement.playerSpeed = 5f;
+        playerMovementScript.playerSpeed = 4f;
         if (!dialaogueTriggerScript.isCameraChanged)
         {
             dialaogueTriggerScript.tasksCanvas.SetActive(true);

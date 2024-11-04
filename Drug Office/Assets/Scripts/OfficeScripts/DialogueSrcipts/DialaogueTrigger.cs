@@ -6,6 +6,7 @@ public class DialaogueTrigger : MonoBehaviour
 {
     public Dialaogue dialaogue;
     public DialaogueManagerScript dialaogueScript;
+    public PlayerMovement playerMovementScript;
     [SerializeField] bool isRepeatable;
     [SerializeField] bool isWantStop;
     public bool isCameraChanged;
@@ -26,7 +27,7 @@ public class DialaogueTrigger : MonoBehaviour
 
             if (isWantStop == true)
             {
-                PlayerMovement.playerSpeed = PlayerMovement.playerFreeze;
+                playerMovementScript.playerSpeed = PlayerMovement.playerFreeze;
             }
             if (isCameraChanged == true)
             {
