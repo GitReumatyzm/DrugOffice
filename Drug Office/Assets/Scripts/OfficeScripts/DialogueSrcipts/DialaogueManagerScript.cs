@@ -60,7 +60,6 @@ public class DialaogueManagerScript : MonoBehaviour
         playerMovementScript.playerSpeed = 4f;
         if (!dialaogueTriggerScript.isCameraChanged)
         {
-            dialaogueTriggerScript.tasksCanvas.SetActive(true);
             dialaogueTriggerScript.cutsceneCamera.SetActive(false);
             dialaogueTriggerScript.playerCamera.SetActive(true);
         }
