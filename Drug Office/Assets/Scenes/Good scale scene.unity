@@ -6520,9 +6520,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1331075197}
-    - targetCorrespondingSourceObject: {fileID: -7146521406498821007, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1331075196}
     - targetCorrespondingSourceObject: {fileID: -6763858364670572316, guid: 4f3391e829f793f4db95a2ce1a137cc9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 534895596}
@@ -16356,21 +16353,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5963116, y: 1.8043015, z: 0.10652399}
   m_Center: {x: -0.55713916, y: -0.011345267, z: 1.3193066}
---- !u!114 &1331075196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331075193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e6e3e5abf727643949f8cfb507166b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elevatorAnim1: {fileID: 534895596}
-  elevatorAnim2: {fileID: 534895594}
-  elevatorDoorOpeningScript: {fileID: 113699127}
 --- !u!65 &1331075197
 BoxCollider:
   m_ObjectHideFlags: 0
