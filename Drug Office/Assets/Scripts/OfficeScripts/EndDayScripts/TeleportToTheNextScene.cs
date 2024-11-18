@@ -10,6 +10,9 @@ public class TeleportToTheNextScene : MonoBehaviour, iInteractable
     private string elevatorDoorClose1 = "elevatorDoorCloseAnim";
     private string elevatorDoorClose2 = "elevatorDoorCloseAnim1";
     public elevatorOpening elevatorDoorOpeningScript;
+
+    public GameObject player;
+    public GameObject dullPlayer;
     public void Interact()
     {
         if (elevatorDoorOpeningScript.isElevatorDoorOpened)
@@ -23,5 +26,8 @@ public class TeleportToTheNextScene : MonoBehaviour, iInteractable
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene(0);
+        player.SetActive(false);
+        dullPlayer.SetActive(true);
+
     }
 }
