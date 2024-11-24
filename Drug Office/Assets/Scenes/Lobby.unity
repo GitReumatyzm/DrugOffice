@@ -3778,7 +3778,7 @@ GameObject:
   - component: {fileID: 1925517796}
   - component: {fileID: 1925517798}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: EndDayCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3803,8 +3803,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.2351379, z: 1.84198}
-  m_Center: {x: 0, y: -0.11756897, z: -0.08468628}
+  m_Size: {x: 1, y: 1.2351379, z: 4.0336847}
+  m_Center: {x: 0, y: -0.11756897, z: -0.2601297}
 --- !u!4 &1925517797
 Transform:
   m_ObjectHideFlags: 0
@@ -3813,13 +3813,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925517795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.462, y: 10.303, z: 0.563}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.538, y: 10.303, z: 2.563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1925517798
 MonoBehaviour:
   m_ObjectHideFlags: 0
