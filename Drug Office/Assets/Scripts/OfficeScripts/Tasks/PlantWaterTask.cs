@@ -27,5 +27,6 @@ public class PlantWaterTask : MonoBehaviour, iInteractable
     {
         yield return new WaitForSeconds(time);
         waterPlantTaskText.enabled = false;
+        plantTaskInfoCollider.SetActive(false);
     }
 }

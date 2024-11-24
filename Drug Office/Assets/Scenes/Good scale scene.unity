@@ -18102,6 +18102,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e824b191b77b2b94c8f58d6b426f88a1, type: 3}
   m_PrefabInstance: {fileID: 1768998392}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1772076131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1772076132}
+  - component: {fileID: 1772076133}
+  - component: {fileID: 1772076134}
+  m_Layer: 0
+  m_Name: ToiletTaskCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1772076132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772076131}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.746, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2091213471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1772076133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772076131}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.9307723, z: 0.43475878}
+  m_Center: {x: 0, y: -0.034613848, z: -0.2826207}
+--- !u!114 &1772076134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772076131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - 'Click "E" to water the plant
+
+'
+  dialaogueScript: {fileID: 77635469}
+  playerMovementScript: {fileID: 41808164}
+  isRepeatable: 1
+  isWantStop: 0
+  isCameraChanged: 0
+  playerCamera: {fileID: 1071508679}
+  cutsceneCamera: {fileID: 1071508679}
+  tasksCanvas: {fileID: 1864662254}
 --- !u!1001 &1783033743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21859,7 +21939,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7916c1cd7f2dd414eb28ce89800d5e5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1772076132}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7916c1cd7f2dd414eb28ce89800d5e5c, type: 3}
       insertIndex: -1
@@ -21914,7 +21997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterPlantTaskText: {fileID: 1449567617}
   EndTaskMessage: '*sounds of draining water*'
-  plantTaskInfoCollider: {fileID: 299885340}
+  plantTaskInfoCollider: {fileID: 1772076131}
   time: 3
 --- !u!1001 &2092692522
 PrefabInstance:
