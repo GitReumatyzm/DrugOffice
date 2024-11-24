@@ -7,6 +7,7 @@ public class teleportToNextLvL : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-       SceneManager.LoadScene(2);
+        GameManager.Instance.hasVisitedScene2 = true;
+        SceneManager.LoadScene(2);
     }
 }

@@ -1,29 +1,39 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DaySwitcher : MonoBehaviour
 {
-    [Header("Day One (Disable)")]
-    public List<GameObject> dayOneObjects = new List<GameObject>();
+    // Reference to game objects that need to be toggled
+    public GameObject[] objectsToActivate;
+    public GameObject[] objectsToDeactivate;
 
-    [Header("Day Two (Enable)")]
-    public List<GameObject> dayTwoObjects = new List<GameObject>();
-
-    // Public method to toggle the objects
-    public void SwitchDayTo2()
+    void Start()
     {
-        // Disable all objects in the Day One list
-        foreach (GameObject obj in dayOneObjects)
+        if (GameManager.Instance.hasVisitedScene2)
         {
-            if (obj != null)
-                obj.SetActive(false);
-        }
-
-        // Enable all objects in the Day Two list
-        foreach (GameObject obj in dayTwoObjects)
-        {
-            if (obj != null)
+            // Activate certain objects
+            foreach (GameObject obj in objectsToActivate)
+            {
                 obj.SetActive(true);
+            }
+
+            // Deactivate certain objects
+            foreach (GameObject obj in objectsToDeactivate)
+            {
+                obj.SetActive(false);
+            }
+        }
+        else
+        {
+            // Default state when first entering Scene 1
+            foreach (GameObject obj in objectsToActivate)
+            {
+                obj.SetActive(false);
+            }
+
+            foreach (GameObject obj in objectsToDeactivate)
+            {
+                obj.SetActive(true);
+            }
         }
     }
 }

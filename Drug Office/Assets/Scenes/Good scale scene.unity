@@ -10685,12 +10685,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066bf1b4c2ecdb24db47b83bd120b943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayOneObjects:
+  objectsToActivate:
+  - {fileID: 1065036782}
+  objectsToDeactivate:
   - {fileID: 1131578281}
   - {fileID: 1991719600}
   - {fileID: 358841041}
-  dayTwoObjects:
-  - {fileID: 1065036782}
 --- !u!1001 &1144060400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20711,6 +20711,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2116794397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2022306849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2022306851}
+  - component: {fileID: 2022306850}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2022306850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022306849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c97779118fefb54ab71b15e345043a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasVisitedScene2: 0
+  playerLevel: 1
+--- !u!4 &2022306851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022306849}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8010434, y: 10.417988, z: -1.116817}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2023760775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22319,3 +22365,4 @@ SceneRoots:
   - {fileID: 1816904193}
   - {fileID: 443834619}
   - {fileID: 1220093372}
+  - {fileID: 2022306851}

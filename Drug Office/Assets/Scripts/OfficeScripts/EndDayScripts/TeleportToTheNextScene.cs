@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class TeleportToTheNextScene : MonoBehaviour, iInteractable
 {
     public Animator elevatorAnim1;
-    public DaySwitcher daySwitcher;
     public Animator elevatorAnim2;
     private string elevatorDoorClose1 = "elevatorDoorCloseAnim";
     private string elevatorDoorClose2 = "elevatorDoorCloseAnim1";
@@ -29,7 +28,6 @@ public class TeleportToTheNextScene : MonoBehaviour, iInteractable
         SceneManager.LoadScene(0);
         player.SetActive(false);
         dullPlayer.SetActive(true);
-        daySwitcher.SwitchDayTo2();
 
 
     }
