@@ -9,20 +9,33 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
     public BoxCollider computerCollider;
     //public GameObject infoCollider;
     public bool isSitting = false;
+    public GameObject TasksText;
     public DialaogueManagerScript dialaogueManager;
     public void Interact()
     {
-        if (dialaogueManager.isQActive)
-        {
+        //if (dialaogueManager.isQActive)
+      //  {
             if (!isSitting)
             {
                 isSitting = true;
                 player.SetActive(false);
                 dullPlayer.SetActive(true);
                 computerCollider.enabled = true;
+                TasksText.SetActive(false);
                 //infoCollider.SetActive(false)
             }
-        }
+      //  }
+
+    }
+    public void StandUp()
+    {
+            TasksText.SetActive(true);
+            isSitting = false;
+            player.SetActive(true);
+            dullPlayer.SetActive(false);
+            computerCollider.enabled = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            FirstPersonCamera.mouseSesnsitivity = 750f;
 
     }
 

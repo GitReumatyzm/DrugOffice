@@ -11,8 +11,8 @@ public class James : MonoBehaviour
     public Button submitButton;       // Submit button
     public GameObject canvasToClose;  // Canvas to close after submission
 
-    private decimal[] amounts = new decimal[4]; // Store amounts for calculation
-    private decimal totalAmount;                // Total amount
+    private int[] amounts = new int[4]; // Store amounts as integers for calculation
+    private int totalAmount;           // Total amount as integer
 
     private void Start()
     {
@@ -75,9 +75,8 @@ public class James : MonoBehaviour
                 profitItems.RemoveAt(index);
             }
 
-            // Generate a random amount between 1.00 and 10.00, to two decimal places
-            int amountInCents = rnd.Next(100, 1001); // 100 to 1000 cents
-            decimal amount = amountInCents / 100m;
+            // Generate a random whole number amount between 1 and 10
+            int amount = rnd.Next(1, 11); // 1 to 10 inclusive
 
             if (isCost)
             {
@@ -89,12 +88,12 @@ public class James : MonoBehaviour
 
             // Display the item name and amount
             itemTexts[i].text = itemName;
-            amountTexts[i].text = amount.ToString("F2"); // Format to two decimal places
+            amountTexts[i].text = amount.ToString(); // No decimal places
         }
 
         // Calculate the total amount
         totalAmount = 0;
-        foreach (decimal amt in amounts)
+        foreach (int amt in amounts)
         {
             totalAmount += amt;
             Debug.Log(totalAmount);
@@ -106,13 +105,10 @@ public class James : MonoBehaviour
 
     private void CheckAnswer()
     {
-        decimal userTotal;
-        string userInput = inputField.text.Replace('.', ','); // Allow for dot instead of comma
-        if (decimal.TryParse(userInput, out userTotal))
+        int userTotal;
+        if (int.TryParse(inputField.text, out userTotal))
         {
-            // Allow a small tolerance in the comparison
-            decimal tolerance = 0.01m;
-            if (Mathf.Abs((float)(userTotal - totalAmount)) < (float)tolerance)
+            if (userTotal == totalAmount)
             {
                 Debug.Log("Correct");
             }
@@ -130,12 +126,12 @@ public class James : MonoBehaviour
             Debug.Log("Please enter a valid number.");
         }
     }
-        void Update()
+
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
 }

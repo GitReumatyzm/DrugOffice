@@ -8,5 +8,6 @@ public class interaktWithJamesTask : MonoBehaviour, iInteractable
     public void Interact()
     {
        jamesCanvas.SetActive(true);
+       Cursor.lockState = CursorLockMode.None;
     }
 }
