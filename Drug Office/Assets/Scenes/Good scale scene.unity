@@ -317,7 +317,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6795255217789477741, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1409749151}
   m_SourcePrefab: {fileID: 100100000, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
 --- !u!114 &41808164 stripped
 MonoBehaviour:
@@ -1513,6 +1516,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 146b136d76cb1e144a68b44a27c8e4b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1283436172}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 146b136d76cb1e144a68b44a27c8e4b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1079214407}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 146b136d76cb1e144a68b44a27c8e4b1, type: 3}
       insertIndex: -1
@@ -1571,6 +1577,7 @@ MonoBehaviour:
   deskDocsObjs:
   - {fileID: 1283436171}
   taskEndMessage: Noice mate
+  shelfInfoCollider: {fileID: 219328398}
 --- !u!1 &121257937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2334,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f4f66116ceac0824eb638fe11f9e913f, type: 3}
   m_PrefabInstance: {fileID: 1003700047}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &219328398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219328399}
+  - component: {fileID: 219328400}
+  - component: {fileID: 219328401}
+  m_Layer: 0
+  m_Name: SecondStageDocsTaskCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &219328399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219328398}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.543, y: 0.007, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 437014278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &219328400
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219328398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.36985785, y: 0.43116903, z: 1}
+  m_Center: {x: 0.03929791, y: 0.04658682, z: 4.099136e-16}
+--- !u!114 &219328401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219328398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - Click "E" to put docs and take another one
+  dialaogueScript: {fileID: 77635469}
+  playerMovementScript: {fileID: 41808164}
+  isRepeatable: 1
+  isWantStop: 0
+  isCameraChanged: 0
+  playerCamera: {fileID: 1071508679}
+  cutsceneCamera: {fileID: 1071508679}
+  tasksCanvas: {fileID: 1864662254}
 --- !u!1001 &226874704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3891,7 +3976,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e824b191b77b2b94c8f58d6b426f88a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 219328399}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e824b191b77b2b94c8f58d6b426f88a1, type: 3}
       insertIndex: -1
@@ -3926,7 +4014,8 @@ MonoBehaviour:
   deskBossTaskText: '- Great work, fella! Now leave the rest on boss desk'
   isStorageRoomDone: 0
   papersNumber: 0
-  bossDeskTaskInfoCollider: {fileID: 299885340}
+  bossDeskTaskInfoCollider: {fileID: 1079214406}
+  startInfoCollider: {fileID: 1220438943}
 --- !u!65 &437014282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4947,7 +5036,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e824b191b77b2b94c8f58d6b426f88a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1220438944}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e824b191b77b2b94c8f58d6b426f88a1, type: 3}
       insertIndex: -1
@@ -5004,8 +5096,8 @@ MonoBehaviour:
   playerObjects:
   - {fileID: 1104809693}
   - {fileID: 444936998}
-  startInfoBoxCollider: {fileID: 299885340}
-  shelfInfoCollider: {fileID: 299885340}
+  startInfoBoxCollider: {fileID: 1220438943}
+  shelfInfoCollider: {fileID: 219328398}
   documentsObject: {fileID: 1104809693}
   PapersNumber: 3
 --- !u!95 &534895594 stripped
@@ -10304,6 +10396,84 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7527051792388149265, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
   m_PrefabInstance: {fileID: 41808163}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1079214406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079214407}
+  - component: {fileID: 1079214408}
+  - component: {fileID: 1079214409}
+  m_Layer: 0
+  m_Name: EndStageDocsTaskCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1079214407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079214406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.664, y: 0, z: -0.758}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 118066838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1079214408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079214406}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.43535426, y: 0.5399854, z: 1.5403893}
+  m_Center: {x: 0.29366893, y: 0.23000729, z: 0.2701947}
+--- !u!114 &1079214409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079214406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - Click "E" to put down docs
+  dialaogueScript: {fileID: 77635469}
+  playerMovementScript: {fileID: 41808164}
+  isRepeatable: 1
+  isWantStop: 0
+  isCameraChanged: 0
+  playerCamera: {fileID: 1071508679}
+  cutsceneCamera: {fileID: 1071508679}
+  tasksCanvas: {fileID: 1864662254}
 --- !u!1001 &1094387441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11693,6 +11863,84 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b494c9a7b1a33064396b168e6e45c215, type: 3}
+--- !u!1 &1220438943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220438944}
+  - component: {fileID: 1220438945}
+  - component: {fileID: 1220438946}
+  m_Layer: 0
+  m_Name: DocsTaskCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220438944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220438943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.492, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 534292996}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1220438945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220438943}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31699657, y: 0.39142013, z: 1.2614557}
+  m_Center: {x: -0.101614386, y: 0.051001877, z: 0.029238284}
+--- !u!114 &1220438946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220438943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a8b23fafb9a6640ab15e48ad48dfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialaogue:
+    npcName: 
+    sentences:
+    - Click "E" to grab docs from shelf
+  dialaogueScript: {fileID: 77635469}
+  playerMovementScript: {fileID: 41808164}
+  isRepeatable: 1
+  isWantStop: 0
+  isCameraChanged: 0
+  playerCamera: {fileID: 1071508679}
+  cutsceneCamera: {fileID: 1071508679}
+  tasksCanvas: {fileID: 1864662254}
 --- !u!4 &1229619426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 146b136d76cb1e144a68b44a27c8e4b1, type: 3}
@@ -14248,6 +14496,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6795255217789477741, guid: 9632e22a219d1ce41a7930a594975488, type: 3}
   m_PrefabInstance: {fileID: 41808163}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1409749151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409749150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fc7849142d2c046990af3a0505402b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1413550096
 PrefabInstance:
   m_ObjectHideFlags: 0

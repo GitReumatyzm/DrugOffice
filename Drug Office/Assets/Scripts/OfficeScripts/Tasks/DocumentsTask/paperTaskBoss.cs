@@ -9,6 +9,7 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
     [SerializeField] GameObject docObj;
     [SerializeField] List<GameObject> deskDocsObjs = new List<GameObject>();
     [SerializeField] string taskEndMessage = "Noice mate";
+    [SerializeField] GameObject shelfInfoCollider;
 
     public void Interact()
     {
@@ -30,5 +31,6 @@ public class paperTaskBoss : MonoBehaviour, iInteractable
         yield return new WaitForSeconds(time);
         paperTaskEndScript.papersTaskText.enabled = false;
         paperTaskEndScript.bossDeskTaskInfoCollider.SetActive(false);
+        shelfInfoCollider.SetActive(false);
     }
 }

@@ -10,6 +10,7 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
     public bool isStorageRoomDone;
     public int papersNumber;
     public GameObject bossDeskTaskInfoCollider;
+    public GameObject startInfoCollider;
 
     public void Interact()
     {
@@ -19,6 +20,7 @@ public class paperTaskEnd : MonoBehaviour, iInteractable
           papersNumber = 2;
           papersTaskText.text = deskBossTaskText + $" ({papersNumber})";
           bossDeskTaskInfoCollider.SetActive(true);
+          startInfoCollider.SetActive(false);
         }
     }
 }
