@@ -22228,6 +22228,10 @@ PrefabInstance:
       propertyPath: dullPlayer
       value: 
       objectReference: {fileID: 1734730218}
+    - target: {fileID: 6853632616694318274, guid: 0f23435b289797b49ae820994c0d0cfd, type: 3}
+      propertyPath: daySwitcher
+      value: 
+      objectReference: {fileID: 1131578283}
     - target: {fileID: 7184458020758651226, guid: 0f23435b289797b49ae820994c0d0cfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.399
