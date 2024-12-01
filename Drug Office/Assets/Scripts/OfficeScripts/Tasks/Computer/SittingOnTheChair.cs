@@ -9,7 +9,6 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
     public BoxCollider computerCollider;
     //public GameObject infoCollider;
     public bool isSitting = false;
-    public GameObject TasksText;
     public DialaogueManagerScript dialaogueManager;
     public void Interact()
     {
@@ -21,7 +20,6 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
                 player.SetActive(false);
                 dullPlayer.SetActive(true);
                 computerCollider.enabled = true;
-                TasksText.SetActive(false);
                 //infoCollider.SetActive(false)
             }
       //  }
@@ -29,7 +27,6 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
     }
     public void StandUp()
     {
-            TasksText.SetActive(true);
             isSitting = false;
             player.SetActive(true);
             dullPlayer.SetActive(false);
