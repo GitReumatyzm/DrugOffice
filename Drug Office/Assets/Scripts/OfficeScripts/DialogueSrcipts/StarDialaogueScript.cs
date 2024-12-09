@@ -8,6 +8,7 @@ public class StarDialaogueScript : MonoBehaviour
     public DialaogueManagerScript dialaogueManager;
     public PlayerMovement playerMovementScript;
     [SerializeField] GameObject boss;
+    [SerializeField] GameObject pressTText;
 
     void Start()
     {
@@ -32,5 +33,6 @@ public class StarDialaogueScript : MonoBehaviour
         {
             dialaogueManager.StartDialaogue(dialaogue);
         }
+
     }
 }

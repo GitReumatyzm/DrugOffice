@@ -18,8 +18,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform groundCheck;
     [SerializeField] LayerMask groundMask;
     private bool isGrounded;
-
-    [SerializeField] GameObject tasksContainer;
     void Update()
     {
         PlayerMovementFunction();
