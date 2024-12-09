@@ -3803,7 +3803,6 @@ MonoBehaviour:
     - (press Q to leave desk)
   dialaogueManager: {fileID: 77635469}
   playerMovementScript: {fileID: 41808164}
-  boss: {fileID: 1258575755}
   pressTText: {fileID: 1939702057}
 --- !u!4 &373211867 stripped
 Transform:
@@ -11113,7 +11112,6 @@ MonoBehaviour:
     - Press Q to leave desk
   dialaogueManager: {fileID: 77635469}
   playerMovementScript: {fileID: 41808164}
-  boss: {fileID: 1258575755}
   pressTText: {fileID: 0}
 --- !u!4 &1065036784
 Transform:
@@ -13788,6 +13786,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5734962216125271055, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 1258575755}
     - target: {fileID: 5734962216125271055, guid: 3e4f5d50b9e51764499178e3e4a1bd35, type: 3}
       propertyPath: tasks
       value: 

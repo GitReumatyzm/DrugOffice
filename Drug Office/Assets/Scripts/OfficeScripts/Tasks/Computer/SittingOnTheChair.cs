@@ -33,7 +33,6 @@ public class SittingOnTheChair : MonoBehaviour, iInteractable
             computerCollider.enabled = false;
             Cursor.lockState = CursorLockMode.Locked;
             FirstPersonCamera.mouseSesnsitivity = 750f;
-
     }
 
 }

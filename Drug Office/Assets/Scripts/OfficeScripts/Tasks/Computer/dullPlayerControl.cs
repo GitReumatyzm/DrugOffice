@@ -7,6 +7,7 @@ public class dullPlayerControl : MonoBehaviour
     public SittingOnTheChair sittingOnChairScript;
     public GameObject tasks;
     public DialaogueManagerScript dialaogueManager;
+    [SerializeField] GameObject boss;
     void Update()
     {
         if (dialaogueManager.isQActive)
@@ -21,6 +22,7 @@ public class dullPlayerControl : MonoBehaviour
                 //sittingOnChairScript.infoCollider.SetActive(false);
                 tasks.SetActive(true);
                 Cursor.lockState = CursorLockMode.Locked;
+                boss.SetActive(false);
             }
         }
 

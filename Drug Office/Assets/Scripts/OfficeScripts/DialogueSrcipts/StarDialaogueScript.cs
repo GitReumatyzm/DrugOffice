@@ -7,7 +7,6 @@ public class StarDialaogueScript : MonoBehaviour
     public Dialaogue dialaogue;
     public DialaogueManagerScript dialaogueManager;
     public PlayerMovement playerMovementScript;
-    [SerializeField] GameObject boss;
     [SerializeField] GameObject pressTText;
 
     void Start()
